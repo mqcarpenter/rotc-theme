@@ -113,7 +113,13 @@ $games = $feed['games'] ?? [];
  * hub-style river (thumbnail + excerpt rows) for everything after
  * that -- a real news-site front page, not a flat grid of equal cards.
  */
-$newsQuery = new WP_Query(['post_type' => 'post', 'posts_per_page' => 9, 'post_status' => 'publish']);
+// ignore_sticky_posts: a news homepage's hero should be whatever is
+// genuinely most recent -- confirmed live a 2022 post ("John T.
+// Buckley Championship Trophy") was pinned to the hero slot ahead of
+// everything published since, purely because it's marked Sticky in
+// WordPress. Sticky is a blog-index concept; it has no place deciding
+// what counts as this week's lead story.
+$newsQuery = new WP_Query(['post_type' => 'post', 'posts_per_page' => 9, 'post_status' => 'publish', 'ignore_sticky_posts' => true]);
 $newsPosts = $newsQuery->posts;
 $hero = $newsPosts[0] ?? null;
 $featured = array_slice($newsPosts, 1, 4);
@@ -164,8 +170,8 @@ $river = array_slice($newsPosts, 5);
     <?php get_template_part('template-parts/sidebar-scores'); ?>
     <div class="rotc-card">
       <h3 class="rotc-section-title" style="font-size:15px;"><?php esc_html_e('League Community', 'rotc-theme'); ?></h3>
-      <p><a class="rotc-league-cta" href="<?php echo esc_url(home_url('/smack-board/')); ?>"><?php esc_html_e('Smack Board', 'rotc-theme'); ?> &rarr;</a></p>
-      <p><a class="rotc-league-cta" href="<?php echo esc_url(home_url('/knowledge-base/')); ?>"><?php esc_html_e('FAQ / Knowledge Base', 'rotc-theme'); ?> &rarr;</a></p>
+      <p><a class="rotc-league-cta" href="<?php echo esc_url(rotc_theme_page_url('community')); ?>"><?php esc_html_e('Smack Board', 'rotc-theme'); ?> &rarr;</a></p>
+      <p><a class="rotc-league-cta" href="<?php echo esc_url(rotc_theme_page_url('faq')); ?>"><?php esc_html_e('FAQ / Knowledge Base', 'rotc-theme'); ?> &rarr;</a></p>
     </div>
     <?php if (is_active_sidebar('rotc-footer')): ?>
       <div class="rotc-card"><?php dynamic_sidebar('rotc-footer'); ?></div>

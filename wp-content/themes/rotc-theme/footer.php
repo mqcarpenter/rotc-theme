@@ -15,8 +15,8 @@ if (!defined('ABSPATH')) exit;
       </div>
       <div>
         <h3 class="rotc-footer-heading"><?php esc_html_e('Community', 'rotc-theme'); ?></h3>
-        <p><a href="<?php echo esc_url(home_url('/smack-board/')); ?>"><?php esc_html_e('Smack Board', 'rotc-theme'); ?></a></p>
-        <p><a href="<?php echo esc_url(home_url('/knowledge-base/')); ?>"><?php esc_html_e('FAQ', 'rotc-theme'); ?></a></p>
+        <p><a href="<?php echo esc_url(rotc_theme_page_url('community')); ?>"><?php esc_html_e('Smack Board', 'rotc-theme'); ?></a></p>
+        <p><a href="<?php echo esc_url(rotc_theme_page_url('faq')); ?>"><?php esc_html_e('FAQ', 'rotc-theme'); ?></a></p>
       </div>
       <?php if (is_active_sidebar('rotc-footer')): ?>
         <?php dynamic_sidebar('rotc-footer'); ?>

@@ -9,7 +9,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('ROTC_THEME_VERSION', '0.1.0');
+define('ROTC_THEME_VERSION', '0.2.0');
 
 function rotc_theme_setup(): void {
     add_theme_support('title-tag');
@@ -42,6 +42,25 @@ function rotc_theme_assets(): void {
 add_filter('comments_open', '__return_false');
 add_filter('pings_open', '__return_false');
 add_filter('comments_array', '__return_empty_array');
+
+/**
+ * Same reasoning, different surface: a "Latest Comments" block widget
+ * was left over in a footer widget area from before this theme was
+ * active (confirmed live -- it was rendering real comment data via
+ * dynamic_sidebar('rotc-footer') on the front page). Removing it in
+ * Appearance > Widgets would work too, but suppressing the block
+ * itself here means it can never resurface site-wide (post content,
+ * any widget area, a future page) no matter how it gets re-added --
+ * consistent with "no comments anywhere" rather than "no comments in
+ * the one spot someone happened to notice."
+ */
+add_filter('render_block_core/latest-comments', '__return_empty_string');
+// The classic (non-block) Recent Comments widget, same reasoning.
+function rotc_theme_unregister_widgets(): void {
+    unregister_widget('WP_Widget_Recent_Comments');
+}
+add_action('widgets_init', 'rotc_theme_unregister_widgets', 11);
+
 add_action('wp_enqueue_scripts', 'rotc_theme_assets');
 
 function rotc_theme_footer_widgets(): void {

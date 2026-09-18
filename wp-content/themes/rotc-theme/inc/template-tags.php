@@ -24,3 +24,22 @@ function rotc_theme_card_excerpt(int $chars = 140): string {
     if ($lastSpace !== false) $truncated = mb_substr($truncated, 0, $lastSpace);
     return $truncated . '&hellip;';
 }
+
+/**
+ * Looks a page up by its ACTUAL slug rather than a hardcoded guess --
+ * confirmed live that "Smack Board" and "Knowledge Base" (both linked
+ * from the nav/footer) sit at /community/ and /faq/ respectively, not
+ * the guessable /smack-board/ or /knowledge-base/ this theme originally
+ * assumed. Cached per-request (static array) since the same lookup
+ * happens on every page load from the footer.
+ *
+ * @return string The page's real permalink, or $fallback ('#' by
+ *   default) if no published page has that slug -- a dead '#' link is
+ *   safer than home_url('/guessed-slug/') silently 404ing again.
+ */
+function rotc_theme_page_url(string $slug, string $fallback = '#'): string {
+    static $cache = [];
+    if (array_key_exists($slug, $cache)) return $cache[$slug];
+    $page = get_page_by_path($slug);
+    return $cache[$slug] = $page ? get_permalink($page) : $fallback;
+}
