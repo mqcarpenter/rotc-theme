@@ -11,9 +11,6 @@ get_header();
   </main>
   <aside class="rotc-sidebar">
     <?php get_template_part('template-parts/sidebar-scores'); ?>
-    <?php if (is_active_sidebar('rotc-footer')): ?>
-      <div class="rotc-card"><?php dynamic_sidebar('rotc-footer'); ?></div>
-    <?php endif; ?>
   </aside>
 </div>
 <?php get_footer(); ?>

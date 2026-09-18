@@ -63,18 +63,20 @@ add_action('widgets_init', 'rotc_theme_unregister_widgets', 11);
 
 add_action('wp_enqueue_scripts', 'rotc_theme_assets');
 
-function rotc_theme_footer_widgets(): void {
-    register_sidebar([
-        'name'          => __('Footer', 'rotc-theme'),
-        'id'            => 'rotc-footer',
-        'description'   => __('Shown across the footer, in up to four columns.', 'rotc-theme'),
-        'before_widget' => '<div class="rotc-footer-col">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="rotc-footer-heading">',
-        'after_title'   => '</h3>',
-    ]);
-}
-add_action('widgets_init', 'rotc_theme_footer_widgets');
+/**
+ * NOTE: this theme used to register a 'rotc-footer' widget area here.
+ * Removed -- confirmed live it was a dead end: Appearance > Widgets
+ * showed that area as completely empty, yet dynamic_sidebar('rotc-footer')
+ * was still rendering a stale "Latest Comments" block on every page,
+ * wrapped in this sidebar's own before_widget markup. That's a real
+ * WordPress quirk (the block-based Widgets screen not reflecting a
+ * leftover classic widget assignment in the sidebars_widgets option),
+ * not something fixable from the admin UI. Simplest, most reliable fix:
+ * the theme never calls dynamic_sidebar() on it at all now (see
+ * front-page.php/page.php/footer.php), so there is nothing left for
+ * that stale assignment to render into, regardless of what's still
+ * sitting in the database.
+ */
 
 /**
  * Fallback markup when no 'primary' menu has been assigned yet in

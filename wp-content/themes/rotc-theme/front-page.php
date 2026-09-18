@@ -173,9 +173,6 @@ $river = array_slice($newsPosts, 5);
       <p><a class="rotc-league-cta" href="<?php echo esc_url(rotc_theme_page_url('community')); ?>"><?php esc_html_e('Smack Board', 'rotc-theme'); ?> &rarr;</a></p>
       <p><a class="rotc-league-cta" href="<?php echo esc_url(rotc_theme_page_url('faq')); ?>"><?php esc_html_e('FAQ / Knowledge Base', 'rotc-theme'); ?> &rarr;</a></p>
     </div>
-    <?php if (is_active_sidebar('rotc-footer')): ?>
-      <div class="rotc-card"><?php dynamic_sidebar('rotc-footer'); ?></div>
-    <?php endif; ?>
   </aside>
 </div>
 

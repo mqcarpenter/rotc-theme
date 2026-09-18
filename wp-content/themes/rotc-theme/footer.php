@@ -18,9 +18,6 @@ if (!defined('ABSPATH')) exit;
         <p><a href="<?php echo esc_url(rotc_theme_page_url('community')); ?>"><?php esc_html_e('Smack Board', 'rotc-theme'); ?></a></p>
         <p><a href="<?php echo esc_url(rotc_theme_page_url('faq')); ?>"><?php esc_html_e('FAQ', 'rotc-theme'); ?></a></p>
       </div>
-      <?php if (is_active_sidebar('rotc-footer')): ?>
-        <?php dynamic_sidebar('rotc-footer'); ?>
-      <?php endif; ?>
       <?php if (has_nav_menu('footer')): ?>
         <div>
           <h3 class="rotc-footer-heading"><?php esc_html_e('More', 'rotc-theme'); ?></h3>
