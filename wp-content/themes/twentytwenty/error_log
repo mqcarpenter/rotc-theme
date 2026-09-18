@@ -1,0 +1,4 @@
+[23-Jul-2026 08:53:14 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/otbdesig/returnofthechampions.com/wp-content/themes/twentytwenty/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/otbdesig/returnofthechampions.com/wp-content/themes/twentytwenty/404.php on line 10

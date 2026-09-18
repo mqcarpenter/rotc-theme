@@ -1,0 +1,441 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "nb_NO",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Learn More": [
+                "Lær mer"
+            ],
+            "to": [
+                "til"
+            ],
+            "Back": [
+                "Tilbake"
+            ],
+            "Save": [
+                "Lagre"
+            ],
+            "Close": [
+                "Lukk"
+            ],
+            "Cancel": [
+                "Avbryt"
+            ],
+            "selected": [
+                "valgt"
+            ],
+            "Delete": [
+                "Slett"
+            ],
+            "Updated": [
+                "Oppdatert"
+            ],
+            "OFF": [
+                "AV"
+            ],
+            "View Full Documentation": [
+                "Vis fullstendig dokumentasjon"
+            ],
+            "Saving...": [
+                "Lagrer..."
+            ],
+            "Error": [
+                "Feil"
+            ],
+            "OK": [
+                "OK"
+            ],
+            "Add Training Data": [
+                "Legg til maskinlæringsdata"
+            ],
+            "Choose Training Data": [
+                "Velg maskinlæringsdata"
+            ],
+            "Send Data to AI": [
+                "Send data til KI"
+            ],
+            "Optional": [
+                "Valgfritt"
+            ],
+            "Collection name cannot be empty": [
+                "Samlingens navn kan ikke være tomt"
+            ],
+            "Data Collection": [
+                "Datainnsamling"
+            ],
+            "Note updated successfully": [
+                "Notatet ble oppdatert"
+            ],
+            "Name": [
+                "Navn"
+            ],
+            "Pending": [
+                "Ventende"
+            ],
+            "All Categories": [
+                "Alle kategorier"
+            ],
+            "Delete Selected": [
+                "Slett valgte"
+            ],
+            "of": [
+                "av"
+            ],
+            "Skipped": [
+                "Hoppet over"
+            ],
+            "Failed to create collection": [
+                "Klarte ikke å opprette samling"
+            ],
+            "errors": [
+                "feil"
+            ],
+            "Outdated": [
+                "Utdatert"
+            ],
+            "Added": [
+                "Lagt til"
+            ],
+            "Deleting...": [
+                "Sletter..."
+            ],
+            "added": [
+                "lagt til"
+            ],
+            "How to get started": [
+                "Slik kommer du i gang"
+            ],
+            "Other Actions": [
+                "Andre handlinger"
+            ],
+            "Failed to load available items": [
+                "Kunne ikke laste inn tilgjengelige elementer"
+            ],
+            "Please select one content type first": [
+                "Vennligst velg en innholdstype først"
+            ],
+            "Please select at least one item to add": [
+                "Vennligst velg minst ett element å legge til"
+            ],
+            "Data added successfully": [
+                "Data ble lagt til"
+            ],
+            "Failed to add selected items": [
+                "Kunne ikke legge til valgte elementer"
+            ],
+            "available": [
+                "tilgjengelig"
+            ],
+            "Select Individual Items": [
+                "Velg individuelle elementer"
+            ],
+            "Choose one content type, then select the individual items you want to add to this collection.": [
+                "Velg en innholdstype, og velg deretter de individuelle elementene du vil legge til i denne samlingen."
+            ],
+            "Content Type": [
+                "Innholdstype"
+            ],
+            "No content types are currently available.": [
+                "Ingen innholdstyper er for øyeblikket tilgjengelige."
+            ],
+            "Select a content type to load its available items.": [
+                "Velg en innholdstype for å laste inn tilgjengelige elementer."
+            ],
+            "Loading available items...": [
+                "Laster inn tilgjengelige elementer..."
+            ],
+            "Unable to load the available items for this content type.": [
+                "Kan ikke laste inn tilgjengelige elementer for denne innholdstypen."
+            ],
+            "Search by name": [
+                "Søk etter navn"
+            ],
+            "Select All": [
+                "Velg alle"
+            ],
+            "Clear All": [
+                "Fjern alle"
+            ],
+            "No available items were found for this content type.": [
+                "Ingen tilgjengelige elementer ble funnet for denne innholdstypen."
+            ],
+            "No items match the current filters.": [
+                "Ingen elementer samsvarer med de gjeldende filtrene."
+            ],
+            "Adding Items...": [
+                "Legger til elementer..."
+            ],
+            "Add Selected Items": [
+                "Legg til valgte elementer"
+            ],
+            "Cannot change actions while sync is in progress": [
+                "Kan ikke endre handlinger mens synkronisering pågår"
+            ],
+            "Cannot change actions while validation is in progress": [
+                "Kan ikke endre handlinger mens validering pågår"
+            ],
+            "Checking available WordPress items...": [
+                "Sjekker tilgjengelige WordPress-elementer..."
+            ],
+            "Unable to load available WordPress items": [
+                "Kunne ikke laste tilgjengelige WordPress-elementer"
+            ],
+            "Click Refresh to try again.": [
+                "Klikk Oppdater for å prøve igjen."
+            ],
+            "Available WordPress items to add: %s": [
+                "Tilgjengelige WordPress-elementer som kan legges til: %s"
+            ],
+            "Created in WordPress and not yet added to this collection.": [
+                "Opprettet i WordPress og ennå ikke lagt til i denne samlingen."
+            ],
+            "Collection name updated successfully": [
+                "Samlingens navn oppdatert"
+            ],
+            "Failed to update collection name": [
+                "Kunne ikke oppdatere samlingsnavnet"
+            ],
+            "Delete Collection": [
+                "Slett samling"
+            ],
+            "Are you sure you want to delete this collection?": [
+                "Er du sikker på at du vil slette denne samlingen?"
+            ],
+            "Type the collection name to confirm:": [
+                "Skriv inn samlingsnavnet for å bekrefte:"
+            ],
+            "Enter collection name": [
+                "Skriv inn samlingsnavn"
+            ],
+            "Collection deleted successfully": [
+                "Samlingen ble slettet"
+            ],
+            "Failed to delete collection": [
+                "Kunne ikke slette samlingen"
+            ],
+            "Please select at least one data type": [
+                "Vennligst vel minst én datatype"
+            ],
+            "Failed to add data": [
+                "Kunne ikke legge til data"
+            ],
+            "Checking AI store for orphaned files...": [
+                "Sjekker AI-lager for foreldreløse filer..."
+            ],
+            "Verifying": [
+                "Verifiserer"
+            ],
+            "items": [
+                "elementer"
+            ],
+            "Verification complete:": [
+                "Verifisering fullført:"
+            ],
+            "marked outdated": [
+                "merket som foreldet"
+            ],
+            "WordPress items": [
+                "WordPress-elementer"
+            ],
+            "PDFs": [
+                "PDF-er"
+            ],
+            "AI Notes": [
+                "AI-notater"
+            ],
+            "other files": [
+                "andre filer"
+            ],
+            "orphan files removed from AI store": [
+                "foreldreløse filer fjernet fra AI-lageret"
+            ],
+            "Run sync to re-upload outdated items.": [
+                "Kjør synkronisering for å laste opp foreldede elementer på nytt."
+            ],
+            "Choose an Action": [
+                "Velg en handling"
+            ],
+            "Validate & Fix": [
+                "Valider og fiks"
+            ],
+            "Choose content types (KB Articles, Posts, Pages) to load into the table. This does not send anything to AI yet.": [
+                "Velg innholdstyper (KB-artikler, Innlegg, Sider) som skal lastes inn i tabellen. Dette sender ikke noe til AI ennå."
+            ],
+            "To exclude specific items, search for them in the table, select them, then use Other Actions > Delete Selected.": [
+                "For å ekskludere spesifikke elementer, søk etter dem i tabellen, merk dem, og bruk deretter Andre handlinger > Slett valgte."
+            ],
+            "Select items from the table and send them to train the AI. Use the status tabs to filter, then select all and send.": [
+                "Velg elementer fra tabellen og send dem for å trene AI. Bruk statusfanene til å filtrere, merk deretter alt og send."
+            ],
+            "Keep Content in Sync": [
+                "Hold innholdet synkronisert"
+            ],
+            "When you edit content on your site, its status changes to \"Outdated\". Filter by Outdated, select, and re-send to update the AI.": [
+                "Når du redigerer innhold på nettstedet ditt, endres statusen til «Utdatert». Filtrer etter Utdatert, velg, og send på nytt for å oppdatere AI."
+            ],
+            "Statuses": [
+                "Status"
+            ],
+            "In the table but not yet sent to AI.": [
+                "I tabellen, men ennå ikke sendt til AI."
+            ],
+            "Sent to AI successfully.": [
+                "Sendt til AI med suksess."
+            ],
+            "Re-sent after changes.": [
+                "Sendt på nytt etter endringer."
+            ],
+            "Content changed since last sync. Re-send to update.": [
+                "Innhold endret siden siste synkronisering. Send på nytt for å oppdatere."
+            ],
+            "Could not be synced because the content is empty or the source no longer exists.": [
+                "Kunne ikke synkroniseres fordi innholdet er tomt eller kilden ikke lenger eksisterer."
+            ],
+            "Sync failed. Re-send to retry. Check the content exists and is not empty.": [
+                "Synkronisering mislyktes. Send på nytt for å prøve igjen. Kontroller at innholdet eksisterer og ikke er tomt."
+            ],
+            "Validate & Fix Synced Items": [
+                "Valider og rett synkroniserte elementer"
+            ],
+            "Choose which content types you want to include in your AI training data.": [
+                "Velg hvilke innholdstyper du vil inkludere i AI-maskinlæringsdataene."
+            ],
+            "Only Published content is included. Drafts, Private, and Pending posts are not available for AI training.": [
+                "Bare publisert innhold er inkludert. Utkast, Privat og Ventende innlegg er ikke tilgjengelige for AI-trening."
+            ],
+            "Access Manager Notice": [
+                "Tilgangsbehandler-varsel"
+            ],
+            "Only publicly accessible articles can be uploaded to AI. Articles with access restrictions will not be included in the training data.": [
+                "Kun offentlig tilgjengelige artikler kan lastes opp til AI. Artikler med tilgangsbegrensninger vil ikke bli inkludert i maskinlæringsdataene."
+            ],
+            "Loading content types...": [
+                "Laster inn innholdstyper..."
+            ],
+            "No content types available.": [
+                "Ingen innholdstyper tilgjengelige."
+            ],
+            "excluded": [
+                "ekskludert"
+            ],
+            "All eligible items already added to collection": [
+                "Alle kvalifiserte elementer er allerede lagt til i samlingen"
+            ],
+            "No eligible content": [
+                "Ingen kvalifisert innhold"
+            ],
+            "No articles for %s found. First create and publish articles.": [
+                "Ingen artikler for %s funnet. Opprett og publiser artikler først."
+            ],
+            "No %s found. First create and publish %s.": [
+                "Ingen %s funnet. Opprett og publiser %s først."
+            ],
+            "Already in Collection": [
+                "Allerede i samlingen"
+            ],
+            "These content types have been added": [
+                "Disse innholdstypene har blitt lagt til"
+            ],
+            "Available to Add": [
+                "Tilgjengelig for å legge til"
+            ],
+            "Select items to include in training data": [
+                "Velg elementer som skal inkluderes i maskinlæringsdata"
+            ],
+            "All available content types have been added.": [
+                "Alle tilgjengelige innholdstyper har blitt lagt til."
+            ],
+            "No Content Available": [
+                "Ingen innhold tilgjengelig"
+            ],
+            "Create and publish content first": [
+                "Opprett og publiser innhold først"
+            ],
+            "Requires AI Pro": [
+                "Krever AI Pro"
+            ],
+            "Adding Data...": [
+                "Legger til data..."
+            ],
+            "Add Data": [
+                "Legg til data"
+            ],
+            "Select items from the table and choose a sync method to update your AI training data.": [
+                "Velg elementer fra tabellen og velg en synkroniseringsmetode for å oppdatere AI-maskinlæringsdataene."
+            ],
+            "Run an extra validation pass to make sure the local database and the AI store stay in sync. If a file is missing from the AI store, it will be marked as outdated so it can be re-sent.": [
+                "Kjør en ekstra valideringsrunde for å sikre at den lokale databasen og AI-lageret forblir synkronisert. Hvis en fil mangler fra AI-lageret, vil den bli markert som utdatert slik at den kan sendes på nytt."
+            ],
+            "This checks Added and Updated items already tracked in this collection and removes orphaned WordPress items, PDFs, and AI Notes found only in the AI store. No local database items are deleted.": [
+                "Dette sjekker tillagte og oppdaterte elementer som allerede spores i denne samlingen, og fjerner foreldreløse WordPress-elementer, PDF-er og AI-notater som bare finnes i AI-lageret. Ingen lokale databaseelementer slettes."
+            ],
+            "Collection:": [
+                "Samling:"
+            ],
+            "synced items ready to validate": [
+                "synkroniserte elementer klare for validering"
+            ],
+            "No Added or Updated items are available yet. Validation can still remove orphaned WordPress items, PDFs, and AI Notes left only in the AI store.": [
+                "Ingen tillagte eller oppdaterte elementer er tilgjengelige ennå. Validering kan fortsatt fjerne foreldreløse WordPress-elementer, PDF-er og AI-notater som bare ligger igjen i AI-lageret."
+            ],
+            "Cancel Verify": [
+                "Avbryt verifisering"
+            ],
+            "Validation in Progress...": [
+                "Validering pågår..."
+            ],
+            "Manage your collection settings and data.": [
+                "Administrer samlingsinnstillingene og dataene."
+            ],
+            "Collection Name": [
+                "Samlingnavn"
+            ],
+            "Change the display name for this collection.": [
+                "Endre visningsnavnet for denne samlingen."
+            ],
+            "Unable to delete items. Please refresh the page and try again.": [
+                "Kan ikke slette elementer. Oppdater siden og prøv igjen."
+            ],
+            "Selected Records": [
+                "Valgte poster"
+            ],
+            "Delete the selected training data items from this collection.": [
+                "Slett de valgte maskinlæringsdataene fra denne samlingen."
+            ],
+            "This will permanently delete all training data in this collection.": [
+                "Dette vil permanent slette alle maskinlæringsdataene i denne samlingen."
+            ],
+            "Note added successfully": [
+                "Notatet ble lagt til"
+            ],
+            "AI Features Pro is not properly configured. Please ensure the plugin is activated.": [
+                "AI Features Pro er ikke riktig konfigurert. Vennligst sørg for at pluginet er aktivert."
+            ],
+            "Failed to save note": [
+                "Kunne ikke lagre notat"
+            ],
+            "Unable to determine next collection ID": [
+                "Kan ikke fastslå neste samlings-ID"
+            ],
+            "Creating new collection...": [
+                "Oppretter ny samling..."
+            ],
+            "Collection created successfully": [
+                "Samlingen ble opprettet"
+            ],
+            "Sync in progress. Please wait...": [
+                "Synkronisering pågår. Vennligst vent..."
+            ],
+            "No collections available. Click \"Add New\" to create one.": [
+                "Ingen samlinger tilgjengelige. Klikk \"Legg til ny\" for å opprette en."
+            ],
+            "No training data configuration available.": [
+                "Ingen konfigurasjon for maskinlæringsdata tilgjengelig."
+            ]
+        }
+    }
+}

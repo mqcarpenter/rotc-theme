@@ -1,0 +1,54 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "de_DE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Settings": [
+                "Einstellungen"
+            ],
+            "Learn More": [
+                "Mehr erfahren"
+            ],
+            "AI Features": [
+                "KI-Funktionen"
+            ],
+            "See Demo Quiz": [
+                "Demo-Quiz ansehen"
+            ],
+            "General Settings": [
+                "Allgemeine Einstellungen"
+            ],
+            "This Knowledge Base AI Is Not Enabled": [
+                "Diese Wissensdatenbank-KI ist nicht aktiviert"
+            ],
+            "AI features are optional and turned off by default. AI will only work after you manually enable it and add your own API key in ": [
+                "KI-Funktionen sind optional und standardmäßig deaktiviert. Die KI funktioniert erst, nachdem Sie sie manuell aktivieren und Ihren eigenen API-Schlüssel in"
+            ],
+            "Latest AI Updates": [
+                "Neueste AI-Updates"
+            ],
+            "Learn more": [
+                "Mehr erfahren"
+            ],
+            "Failed to enable feature.": [
+                "Funktion konnte nicht aktiviert werden."
+            ],
+            "FREE": [
+                "KOSTENLOS"
+            ],
+            "Enabling...": [
+                "Wird aktiviert ..."
+            ],
+            "Free Features": [
+                "Kostenlose Funktionen"
+            ],
+            "AI Feature Plugin": [
+                "KI-Funktions-Plugin"
+            ]
+        }
+    }
+}

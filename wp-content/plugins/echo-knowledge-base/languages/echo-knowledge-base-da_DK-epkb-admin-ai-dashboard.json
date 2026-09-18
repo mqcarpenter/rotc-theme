@@ -1,0 +1,54 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "da_DK",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Settings": [
+                "Indstillinger"
+            ],
+            "Learn More": [
+                "Lær mere"
+            ],
+            "AI Features": [
+                "AI-funktioner"
+            ],
+            "See Demo Quiz": [
+                "Se demo-quiz"
+            ],
+            "General Settings": [
+                "Generelle indstillinger"
+            ],
+            "This Knowledge Base AI Is Not Enabled": [
+                "Denne vidensbase-AI er ikke aktiveret"
+            ],
+            "AI features are optional and turned off by default. AI will only work after you manually enable it and add your own API key in ": [
+                "AI-funktioner er valgfri og som standard slukket. AI vil kun virke, efter at du manuelt aktiverer den og tilføjer din egen API-nøgle i"
+            ],
+            "Latest AI Updates": [
+                "Seneste AI-opdateringer"
+            ],
+            "Learn more": [
+                "Læs mere"
+            ],
+            "Failed to enable feature.": [
+                "Kunne ikke aktivere funktionen."
+            ],
+            "FREE": [
+                "GRATIS"
+            ],
+            "Enabling...": [
+                "Aktiverer..."
+            ],
+            "Free Features": [
+                "Gratis funktioner"
+            ],
+            "AI Feature Plugin": [
+                "AI-funktionsplugin"
+            ]
+        }
+    }
+}

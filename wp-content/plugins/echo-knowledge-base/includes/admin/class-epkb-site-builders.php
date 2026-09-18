@@ -1,0 +1,569 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit;
+
+/**
+ * Various KB Core utility functions
+ *
+ * @copyright   Copyright (C) 2018, Echo Plugins
+ * @license http://opensource.org/licenses/gpl-2.0.php GNU Public License
+ */
+class EPKB_Site_Builders {
+
+	public $kb_post_types = [];
+	const ELEMENTOR_OPTION_NAME = 'epkb_elementor_settings';
+	const DIVI_OPTION_NAME      = 'epkb_divi_settings';
+	const VC_OPTION_NAME        = 'epkb_vc_settings';
+	const WPB_OPTION_NAME       = 'epkb_wpb_settings';
+	const BEAVER_OPTION_NAME    = 'epkb_beaver_settings';
+	const SITE_ORIGIN_OPTION_NAME    = 'epkb_so_settings';
+
+	private static $processing_elementor_meta = false;
+
+	function __construct() {
+		add_action( 'admin_init', [ $this, 'add_notices' ] );
+
+		// Register Elementor hooks (only once) - called after plugins_loaded so Elementor is already available
+		add_action( 'elementor/editor/after_save', [ __CLASS__, 'maybe_convert_elementor_shortcode_widget' ], 10, 2 );
+	}
+
+	/**
+	 * Add notices on EPKB admin pages
+	 */
+
+	public function add_notices() {
+
+		// show notices only for admins
+		if ( function_exists( 'wp_get_current_user' ) && ! current_user_can( 'administrator' ) ) {
+			return;
+		}
+
+		// check only on KB pages only
+		$is_kb_request = EPKB_KB_Handler::is_kb_request();
+		if ( ! $is_kb_request ) {
+			return;
+		}
+
+		// get epkb post types
+		$this->get_kb_post_types();
+
+		// try to remove messages about activate post types for all editors
+		$this->remove_old_messages();
+
+		// Don't show on new article page
+		global $pagenow;
+		if ( 'post-new.php' == $pagenow ) {
+			return;
+		}
+
+		// check elementor
+		if ( ! $this->check_elementor_cpt() ) {
+			$this->show_builder_notice( esc_html__( 'Elementor', 'echo-knowledge-base' ), '?page=elementor', esc_html__( 'Post types', 'echo-knowledge-base' ), self::ELEMENTOR_OPTION_NAME );
+		}
+
+		// check divi
+		if ( ! $this->check_divi_cpt() ) {
+			$this->show_builder_notice( esc_html__( 'Divi', 'echo-knowledge-base' ), 'admin.php?page=et_divi_options', esc_html__( 'Builder tab', 'echo-knowledge-base' ), self::DIVI_OPTION_NAME );
+		}
+
+		// check Visual Composer
+		if ( ! $this->check_vc_cpt() ) {
+			$this->show_builder_notice( esc_html__( 'Visual Composer', 'echo-knowledge-base' ), 'admin.php?page=vcv-role-manager', esc_html__( 'Role Manager', 'echo-knowledge-base' ), self::VC_OPTION_NAME );
+		}
+
+		// check WPBakery
+		if ( ! $this->check_wpb_cpt() ) {
+			$this->show_builder_notice( esc_html__( 'WPBakery Page Builder', 'echo-knowledge-base' ), 'admin.php?page=vc-roles', esc_html__( 'Role Manager', 'echo-knowledge-base' ), self::WPB_OPTION_NAME );
+		}
+
+		// check Beaver
+		if ( ! $this->check_beaver_cpt() ) {
+			$this->show_builder_notice( esc_html__( 'Beaver Builder', 'echo-knowledge-base' ), 'options-general.php?page=fl-builder-settings#post-types', esc_html__( 'Settings -> Beaver Builder -> Post Types', 'echo-knowledge-base' ), self::BEAVER_OPTION_NAME );
+		}
+
+		// check SiteOrigin
+		if ( ! $this->check_so_cpt() ) {
+			$this->show_builder_notice( esc_html__( 'SiteOrigin Builder', 'echo-knowledge-base' ), 'options-general.php?page=siteorigin_panels', esc_html__( 'General -> Post Types', 'echo-knowledge-base' ), self::SITE_ORIGIN_OPTION_NAME );
+		}
+	}
+
+	/**
+	 * Show notice on admin EPKB pages
+	 *
+	 * @param $builder_name
+	 * @param $builder_admin_url
+	 * @param $place
+	 * @param $option_name
+	 */
+	private function show_builder_notice( $builder_name, $builder_admin_url, $place, $option_name ) {
+
+		// title
+		$link       = '<a href="' . esc_url( admin_url( $builder_admin_url ) ) . '" target="_blank">' . esc_html__( 'here', 'echo-knowledge-base' ) . '</a>';
+		/* translators: %s: page builder name (e.g., Elementor, Divi) */
+		$title      = esc_html( sprintf( esc_html__( 'Please enable KB Articles for %s.', 'echo-knowledge-base' ), $builder_name ) ) . ' ' . $link;
+
+		// message
+		$reason     = esc_html__( 'Ensure that your Knowledge Base name is checked.', 'echo-knowledge-base' );
+		/* translators: %1$s: page builder name, %2$s: settings location */
+		$message    = sprintf( esc_html__( 'Please go to the %1$s settings, and then go to the %2$s.', 'echo-knowledge-base' ), $builder_name, $place ) . ' ' . $reason;
+
+		EPKB_Admin_Notices::add_ongoing_notice( 'large-notice', $option_name, $message, $title, '<i class="epkbfa epkbfa-exclamation-triangle"></i>' );
+	}
+
+	/**
+	 * Add post types to class var
+	 *
+	 */
+	private function get_kb_post_types() {
+		$this->kb_post_types = [];
+		foreach ( get_post_types() as $post_type ) {
+			if ( EPKB_KB_Handler::is_kb_post_type( $post_type ) ) {
+				$this->kb_post_types[] = $post_type;
+			}
+		}
+	}
+
+	/**
+	 * Remove notices if they were added but not need now
+	 */
+	private function remove_old_messages() {
+		EPKB_Admin_Notices::remove_ongoing_notice( self::ELEMENTOR_OPTION_NAME );
+		EPKB_Admin_Notices::remove_ongoing_notice( self::DIVI_OPTION_NAME );
+
+		$vc_builder_enabled = self::is_vc_enabled();
+		if ( empty( $vc_builder_enabled ) ) {
+			EPKB_Admin_Notices::remove_ongoing_notice( self::VC_OPTION_NAME );
+		}
+
+		EPKB_Admin_Notices::remove_ongoing_notice( self::WPB_OPTION_NAME );
+
+		$beaver_builder_enabled = self::is_beaver_enabled();
+		if ( empty( $beaver_builder_enabled ) ) {
+			EPKB_Admin_Notices::remove_ongoing_notice( self::BEAVER_OPTION_NAME );
+		}
+
+		$so_builder_enabled = self::is_so_enabled();
+		if ( empty( $so_builder_enabled ) ) {
+			EPKB_Admin_Notices::remove_ongoing_notice( self::SITE_ORIGIN_OPTION_NAME );
+		}
+
+	}
+
+	/**
+	 * Check if Elementor is enabled and has activated all epkb post types
+	 *
+	 * @return bool
+	 */
+	private function check_elementor_cpt() {
+
+		$builder_enabled = self::is_elementor_enabled();
+		if ( empty( $builder_enabled ) ) {
+			return true;
+		}
+
+		if ( ! did_action( 'elementor/loaded' ) ) {
+			return true;
+		}
+
+		$elementor_cpt_support = get_option( 'elementor_cpt_support', array() );
+		if ( $elementor_cpt_support === false ) {
+			return true;
+		}
+
+		foreach ( $this->kb_post_types as $post_type ) {
+			//Check for all KB Post Type
+			if ( ! in_array( $post_type, $elementor_cpt_support ) ) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	/**
+	 * Check if DIVI is enabled and has activated all epkb post types
+	 *
+	 * @return bool
+	 */
+	private function check_divi_cpt() {
+
+		$builder_enabled = self::is_divi_enabled();
+		if ( empty( $builder_enabled ) ) {
+			return true;
+		}
+
+		// since DIVI 3.1
+		if ( ! function_exists( 'et_builder_get_enabled_builder_post_types' ) ) {
+			return true;
+		}
+
+		// should always be an array of strings with enabled post types
+		/** @disregard P1010 */
+		$divi_cpt_support = et_builder_get_enabled_builder_post_types();
+		if ( empty( $divi_cpt_support ) || ! is_array( $divi_cpt_support ) ) {
+			return true;
+		}
+
+		foreach ( $this->kb_post_types as $post_type ) {
+			// Check for all KB Post Type
+			if ( ! in_array( $post_type, $divi_cpt_support ) ) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	/**
+	 * Check if Visual Composer is enabled and has activated all epkb post types
+	 *
+	 * @return bool
+	 */
+	private function check_vc_cpt() {
+
+		$builder_enabled = self::is_vc_enabled();
+		if ( empty( $builder_enabled ) ) {
+			return true;
+		}
+
+		/*
+		if ( ! function_exists( 'vchelper' ) ) {
+			return true;
+		}
+
+		 foreach ( $this->kb_post_types as $post_type ) {
+
+			$post_type_object = get_post_type_object( $post_type );
+
+			// something wrong with post type. This condition should never be true
+			if ( empty( $post_type_object ) ) {
+				continue;
+			}
+
+			// show notice only for users that can edit epkb posts
+			if ( ! current_user_can( $post_type_object->cap->create_posts ) ) {
+				continue;
+			}
+
+			// VC special function
+			if ( ! vchelper( 'AccessUserCapabilities' )->isEditorEnabled( $post_type ) ) {
+				return false;
+			}
+		} */
+
+		// show one time notice
+		if ( EPKB_Core_Utilities::is_kb_flag_set( 'vc_notice_shown' ) ) {
+			return true;
+		}
+
+		EPKB_Core_Utilities::add_kb_flag( 'vc_notice_shown' );
+
+		return false;
+	}
+
+	/**
+	 * Check if WPBakery is enabled and has activated all epkb post types
+	 *
+	 * @return bool
+	 */
+	private function check_wpb_cpt() {
+
+		$builder_enabled = self::is_wpb_enabled();
+		if ( empty( $builder_enabled ) ) {
+			return true;
+		}
+
+		if ( ! function_exists( 'vc_editor_post_types' ) ) {
+			return true;
+		}
+
+		/** @disregard P1010 */
+		$wpb_cpt_support = vc_editor_post_types();
+		if ( empty( $wpb_cpt_support) || ! is_array( $wpb_cpt_support ) ) {
+			return true;
+		}
+
+		foreach ( $this->kb_post_types as $post_type ) {
+			if ( ! in_array( $post_type, $wpb_cpt_support ) ) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	/**
+	 * Check if Beaver is enabled and has activated all epkb post types
+	 *
+	 * @return bool
+	 */
+	private function check_beaver_cpt() {
+
+		$builder_enabled = self::is_beaver_enabled();
+		if ( empty( $builder_enabled ) ) {
+			return true;
+		}
+
+		/* $beaver_class = 'FLBuilderModel';
+		if ( ! class_exists( $beaver_class ) || ! method_exists( $beaver_class, 'get_post_types' ) ) {
+			return true;
+		} */
+
+		/** @noinspection PhpUndefinedMethodInspection */
+		/* $beaver_cpt_support = $beaver_class::get_post_types();
+		if ( ! is_array( $beaver_cpt_support ) ) {
+			return true;
+		}
+
+		foreach ( $this->kb_post_types as $post_type ) {
+			if ( ! in_array( $post_type, $beaver_cpt_support ) ) {
+				return false;
+			}
+		} */
+
+		// show one time notice
+		if ( EPKB_Core_Utilities::is_kb_flag_set( 'beaver_notice_shown' ) ) {
+			return true;
+		}
+
+		EPKB_Core_Utilities::add_kb_flag( 'beaver_notice_shown' );
+
+		return false;
+	}
+
+	/**
+	 * Check if SiteOrigin Page Builder is enabled and has activated all epkb post types
+	 *
+	 * @return bool
+	 */
+	private function check_so_cpt() {
+
+		$builder_enabled = self::is_so_enabled();
+		if ( empty( $builder_enabled ) ) {
+			return true;
+		}
+
+		// show one time notice
+		if ( EPKB_Core_Utilities::is_kb_flag_set( 'so_notice_shown' ) ) {
+			return true;
+		}
+
+		EPKB_Core_Utilities::add_kb_flag( 'so_notice_shown' );
+
+		return false;
+	}
+
+	/**
+	 * Check if any page builder is installed
+	 *
+	 * @return bool
+	 */
+	public static function has_page_builder_enabled() {
+		return self::is_elementor_enabled() ||
+			   self::is_divi_enabled() ||
+			   self::is_wpb_enabled() ||
+			   self::is_vc_enabled() ||
+			   self::is_beaver_enabled() ||
+			   self::is_so_enabled();
+	}
+
+	/**
+	 * Check if article content contains page builder shortcodes/tags
+	 *
+	 * @param string $content
+	 * @return bool
+	 */
+	public static function has_page_builder_content( $content ) {
+
+		$content = trim( $content );
+		if ( empty( $content ) || strlen( $content ) < 10 ) {
+			return false;
+		}
+
+		// Divi check - look for Divi builder shortcodes
+		if ( self::is_divi_enabled() ) {
+			if ( strpos( $content, '[et_pb_' ) !== false ||
+				 strpos( $content, 'et_pb_section' ) !== false ) {
+				return true;
+			}
+		}
+
+		// WPBakery/Visual Composer check
+		if ( self::is_wpb_enabled() || self::is_vc_enabled() ) {
+			if ( strpos( $content, '[vc_' ) !== false ||
+				 strpos( $content, 'vc_row' ) !== false ||
+				 strpos( $content, '[vcv_' ) !== false ) {
+				return true;
+			}
+		}
+
+		// Beaver Builder check
+		if ( self::is_beaver_enabled() ) {
+			if ( strpos( $content, '[fl_builder_' ) !== false ||
+				 strpos( $content, 'fl-builder-content' ) !== false ) {
+				return true;
+			}
+		}
+
+		// SiteOrigin Page Builder check
+		if ( self::is_so_enabled() ) {
+			if ( strpos( $content, '[siteorigin_widget' ) !== false ||
+				 strpos( $content, 'panel-layout' ) !== false ) {
+				return true;
+			}
+		}
+
+		// Check for other common shortcodes that might need special handling
+		$shortcodes_to_check = array(
+			'[fusion_',      // Avada Fusion Builder
+			'[av_',          // Enfold Avia Builder
+			'[cs_',          // Cornerstone
+			'[ultimate_',    // Ultimate Addons
+			'[porto_',       // Porto theme
+			'[rev_slider',   // Revolution Slider
+			'[layerslider',  // LayerSlider
+		);
+
+		foreach ( $shortcodes_to_check as $shortcode ) {
+			if ( strpos( $content, $shortcode ) !== false ) {
+				return true;
+			}
+		}
+
+		// Check for Gutenberg blocks (but exclude simple paragraph blocks)
+		if ( strpos( $content, '<!-- wp:' ) !== false ) {
+			// Check for complex blocks that might need page reload
+			$complex_blocks = array(
+				'<!-- wp:columns',
+				'<!-- wp:group',
+				'<!-- wp:cover',
+				'<!-- wp:media-text',
+				'<!-- wp:buttons',
+				'<!-- wp:gallery',
+				'<!-- wp:table',
+				'<!-- wp:embed',
+				'<!-- wp:shortcode',
+				'<!-- wp:html'
+			);
+
+			foreach ( $complex_blocks as $block ) {
+				if ( strpos( $content, $block ) !== false ) {
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
+
+	public static function is_elementor_enabled() {
+		return defined( 'ELEMENTOR_VERSION' );
+	}
+
+	public static function is_divi_enabled() {
+		return class_exists( 'ET_Theme_Builder_Request' );
+	}
+
+	public static function is_wpb_enabled() {
+		return defined( 'WPB_VC_VERSION' );
+	}
+
+	public static function is_vc_enabled() {
+		return defined( 'VCV_VERSION' );
+	}
+
+	public static function is_beaver_enabled() {
+		return defined( 'FL_BUILDER_LITE' );
+	}
+
+	public static function is_so_enabled() {
+		return defined( 'SITEORIGIN_PANELS_VERSION' );
+	}
+
+	/**
+	 * Convert Elementor text-editor widgets containing KB shortcode to shortcode widgets.
+	 * When a page with KB shortcode is converted to Elementor, the shortcode gets placed in a text-editor widget
+	 * which causes newlines to be converted to <br> tags. Converting to shortcode widget fixes this.
+	 *
+	 * @param int $post_id
+	 * @param array $editor_data
+	 */
+	public static function maybe_convert_elementor_shortcode_widget( $post_id, $editor_data ) {
+
+		if ( self::$processing_elementor_meta ) {
+			return;
+		}
+
+		if ( get_post_type( $post_id ) !== 'page' ) {
+			return;
+		}
+
+		// Get the raw meta value for quick string check
+		$meta_value = get_post_meta( $post_id, '_elementor_data', true );
+		if ( empty( $meta_value ) || strpos( $meta_value, '[epkb-knowledge-base' ) === false ) {
+			return;
+		}
+
+		// Only for new users (installed at version 15.920.0 or later)
+		$kb_config = epkb_get_instance()->kb_config_obj->get_kb_config( EPKB_KB_Config_DB::DEFAULT_KB_ID );
+		if ( empty( $kb_config ) || ! EPKB_Utilities::is_new_user( $kb_config, '15.910.0' ) ) {
+			return;
+		}
+
+		$elements = json_decode( $meta_value, true );
+		if ( empty( $elements ) || ! is_array( $elements ) ) {
+			return;
+		}
+
+		$changes_made = false;
+
+		// Loop through root elements (containers)
+		foreach ( $elements as &$container ) {
+			if ( empty( $container['elements'] ) || ! is_array( $container['elements'] ) ) {
+				continue;
+			}
+
+			// Loop through direct children of each container
+			foreach ( $container['elements'] as &$element ) {
+				if ( empty( $element['elType'] ) || $element['elType'] !== 'widget' ) {
+					continue;
+				}
+				if ( empty( $element['widgetType'] ) || $element['widgetType'] !== 'text-editor' ) {
+					continue;
+				}
+				if ( empty( $element['settings']['editor'] ) ) {
+					continue;
+				}
+				if ( strpos( $element['settings']['editor'], '[epkb-knowledge-base' ) === false ) {
+					continue;
+				}
+
+				// Convert to shortcode widget
+				$shortcode = self::extract_kb_shortcode( $element['settings']['editor'] );
+				$element['widgetType'] = 'shortcode';
+				unset( $element['settings']['editor'] );
+				$element['settings']['shortcode'] = $shortcode;
+				$changes_made = true;
+			}
+		}
+
+		if ( $changes_made ) {
+			$new_data = wp_json_encode( $elements );
+			if ( $new_data !== false ) {
+				self::$processing_elementor_meta = true;
+				update_post_meta( $post_id, '_elementor_data', wp_slash( $new_data ) );
+				self::$processing_elementor_meta = false;
+			}
+		}
+	}
+
+	/**
+	 * Extract raw KB shortcode from content, removing WordPress block comment wrappers
+	 *
+	 * @param string $content
+	 * @return string
+	 */
+	private static function extract_kb_shortcode( $content ) {
+		$content = preg_replace( '/<!--\s*wp:shortcode\s*-->/i', '', $content );
+		$content = preg_replace( '/<!--\s*\/wp:shortcode\s*-->/i', '', $content );
+		return trim( $content );
+	}
+}

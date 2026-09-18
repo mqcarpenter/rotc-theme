@@ -1,0 +1,441 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "de_DE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Learn More": [
+                "Mehr erfahren"
+            ],
+            "to": [
+                "zu"
+            ],
+            "Back": [
+                "Zurück"
+            ],
+            "Save": [
+                "Speichern"
+            ],
+            "Close": [
+                "Schließen"
+            ],
+            "Cancel": [
+                "Abbrechen"
+            ],
+            "selected": [
+                "ausgewählt"
+            ],
+            "Delete": [
+                "Löschen"
+            ],
+            "Updated": [
+                "Aktualisiert"
+            ],
+            "OFF": [
+                "AUS"
+            ],
+            "View Full Documentation": [
+                "Vollständige Dokumentation anzeigen"
+            ],
+            "Saving...": [
+                "Speichern..."
+            ],
+            "Error": [
+                "Fehler"
+            ],
+            "OK": [
+                "OK"
+            ],
+            "Add Training Data": [
+                "Trainingsdaten hinzufügen"
+            ],
+            "Choose Training Data": [
+                "Daten zum maschinellen Lernen auswählen"
+            ],
+            "Send Data to AI": [
+                "Daten an KI senden"
+            ],
+            "Optional": [
+                "Optional"
+            ],
+            "Collection name cannot be empty": [
+                "Der Sammlungsname darf nicht leer sein"
+            ],
+            "Data Collection": [
+                "Datensammlung"
+            ],
+            "Note updated successfully": [
+                "Notiz erfolgreich aktualisiert"
+            ],
+            "Name": [
+                "Name"
+            ],
+            "Pending": [
+                "Ausstehend"
+            ],
+            "All Categories": [
+                "Alle Kategorien"
+            ],
+            "Delete Selected": [
+                "Auswahl löschen"
+            ],
+            "of": [
+                "von"
+            ],
+            "Skipped": [
+                "Übersprungen"
+            ],
+            "Failed to create collection": [
+                "Sammlung konnte nicht erstellt werden"
+            ],
+            "errors": [
+                "Fehler"
+            ],
+            "Outdated": [
+                "Veraltet"
+            ],
+            "Added": [
+                "Hinzugefügt"
+            ],
+            "Deleting...": [
+                "Löschen..."
+            ],
+            "added": [
+                "hinzugefügt"
+            ],
+            "How to get started": [
+                "So starten Sie"
+            ],
+            "Other Actions": [
+                "Weitere Aktionen"
+            ],
+            "Failed to load available items": [
+                "Fehler beim Laden der verfügbaren Elemente"
+            ],
+            "Please select one content type first": [
+                "Bitte wählen Sie zuerst einen Inhaltstyp aus"
+            ],
+            "Please select at least one item to add": [
+                "Bitte wählen Sie mindestens einen Eintrag aus, den Sie hinzufügen möchten"
+            ],
+            "Data added successfully": [
+                "Daten erfolgreich hinzugefügt"
+            ],
+            "Failed to add selected items": [
+                "Fehler beim Hinzufügen der ausgewählten Elemente"
+            ],
+            "available": [
+                "verfügbar"
+            ],
+            "Select Individual Items": [
+                "Individuelle Elemente auswählen"
+            ],
+            "Choose one content type, then select the individual items you want to add to this collection.": [
+                "Wählen Sie einen Inhaltstyp aus, und wählen Sie dann die einzelnen Elemente aus, die Sie zu dieser Sammlung hinzufügen möchten."
+            ],
+            "Content Type": [
+                "Inhaltstyp"
+            ],
+            "No content types are currently available.": [
+                "Derzeit sind keine Inhaltstypen verfügbar."
+            ],
+            "Select a content type to load its available items.": [
+                "Wählen Sie einen Inhaltstyp aus, um dessen verfügbare Elemente zu laden."
+            ],
+            "Loading available items...": [
+                "Lade verfügbare Elemente..."
+            ],
+            "Unable to load the available items for this content type.": [
+                "Die verfügbaren Elemente für diesen Inhaltstyp können nicht geladen werden."
+            ],
+            "Search by name": [
+                "Nach Namen suchen"
+            ],
+            "Select All": [
+                "Alle auswählen"
+            ],
+            "Clear All": [
+                "Alle abwählen"
+            ],
+            "No available items were found for this content type.": [
+                "Für diesen Inhaltstyp wurden keine verfügbaren Elemente gefunden."
+            ],
+            "No items match the current filters.": [
+                "Keine Elemente entsprechen den aktuellen Filtern."
+            ],
+            "Adding Items...": [
+                "Elemente werden hinzugefügt..."
+            ],
+            "Add Selected Items": [
+                "Ausgewählte Elemente hinzufügen"
+            ],
+            "Cannot change actions while sync is in progress": [
+                "Aktionen können während der Synchronisierung nicht geändert werden"
+            ],
+            "Cannot change actions while validation is in progress": [
+                "Aktionen können während der laufenden Validierung nicht geändert werden"
+            ],
+            "Checking available WordPress items...": [
+                "Verfügbare WordPress-Elemente werden geprüft..."
+            ],
+            "Unable to load available WordPress items": [
+                "Verfügbare WordPress-Elemente konnten nicht geladen werden"
+            ],
+            "Click Refresh to try again.": [
+                "Klicken Sie auf Aktualisieren, um es erneut zu versuchen."
+            ],
+            "Available WordPress items to add: %s": [
+                "Verfügbare WordPress-Elemente zum Hinzufügen: %s"
+            ],
+            "Created in WordPress and not yet added to this collection.": [
+                "In WordPress erstellt und noch nicht zu dieser Sammlung hinzugefügt."
+            ],
+            "Collection name updated successfully": [
+                "Sammlungsname erfolgreich aktualisiert"
+            ],
+            "Failed to update collection name": [
+                "Aktualisierung des Sammlungsnamens fehlgeschlagen"
+            ],
+            "Delete Collection": [
+                "Sammlung löschen"
+            ],
+            "Are you sure you want to delete this collection?": [
+                "Möchten Sie diese Sammlung wirklich löschen?"
+            ],
+            "Type the collection name to confirm:": [
+                "Geben Sie den Sammlungsnamen zur Bestätigung ein:"
+            ],
+            "Enter collection name": [
+                "Sammlungsname eingeben"
+            ],
+            "Collection deleted successfully": [
+                "Sammlung erfolgreich gelöscht"
+            ],
+            "Failed to delete collection": [
+                "Fehler beim Löschen der Sammlung"
+            ],
+            "Please select at least one data type": [
+                "Bitte wählen Sie mindestens einen Datentyp aus"
+            ],
+            "Failed to add data": [
+                "Daten konnten nicht hinzugefügt werden"
+            ],
+            "Checking AI store for orphaned files...": [
+                "Überprüfe KI-Speicher auf verwaiste Dateien..."
+            ],
+            "Verifying": [
+                "Verifizierung läuft"
+            ],
+            "items": [
+                "Elemente"
+            ],
+            "Verification complete:": [
+                "Verifizierung abgeschlossen:"
+            ],
+            "marked outdated": [
+                "als veraltet markiert"
+            ],
+            "WordPress items": [
+                "WordPress-Elemente"
+            ],
+            "PDFs": [
+                "PDFs"
+            ],
+            "AI Notes": [
+                "KI-Notizen"
+            ],
+            "other files": [
+                "andere Dateien"
+            ],
+            "orphan files removed from AI store": [
+                "verwaiste Dateien aus dem KI-Speicher entfernt"
+            ],
+            "Run sync to re-upload outdated items.": [
+                "Synchronisieren Sie, um veraltete Elemente erneut hochzuladen."
+            ],
+            "Choose an Action": [
+                "Aktion auswählen"
+            ],
+            "Validate & Fix": [
+                "Validieren & Reparieren"
+            ],
+            "Choose content types (KB Articles, Posts, Pages) to load into the table. This does not send anything to AI yet.": [
+                "Wählen Sie Inhaltstypen (KB-Artikel, Beiträge, Seiten) aus, die in die Tabelle geladen werden sollen. Dies sendet noch nichts an KI."
+            ],
+            "To exclude specific items, search for them in the table, select them, then use Other Actions > Delete Selected.": [
+                "Um bestimmte Elemente auszuschließen, suchen Sie sie in der Tabelle, wählen Sie sie aus, und verwenden Sie anschließend Weitere Aktionen > Ausgewählte löschen."
+            ],
+            "Select items from the table and send them to train the AI. Use the status tabs to filter, then select all and send.": [
+                "Wählen Sie Elemente aus der Tabelle aus und senden Sie sie, um die KI zu trainieren. Verwenden Sie die Status-Reiter zum Filtern, dann Alles auswählen und senden."
+            ],
+            "Keep Content in Sync": [
+                "Inhalte synchron halten"
+            ],
+            "When you edit content on your site, its status changes to \"Outdated\". Filter by Outdated, select, and re-send to update the AI.": [
+                "Wenn Sie Inhalte auf Ihrer Website bearbeiten, ändert sich ihr Status zu „Veraltet“. Filtern Sie nach Veraltet, wählen Sie sie aus und senden Sie sie erneut, um die KI zu aktualisieren."
+            ],
+            "Statuses": [
+                "Status"
+            ],
+            "In the table but not yet sent to AI.": [
+                "In der Tabelle, aber noch nicht an die KI gesendet."
+            ],
+            "Sent to AI successfully.": [
+                "Erfolgreich an die KI gesendet."
+            ],
+            "Re-sent after changes.": [
+                "Nach Änderungen erneut gesendet."
+            ],
+            "Content changed since last sync. Re-send to update.": [
+                "Seit der letzten Synchronisierung wurde der Inhalt geändert. Erneut senden, um zu aktualisieren."
+            ],
+            "Could not be synced because the content is empty or the source no longer exists.": [
+                "Konnte nicht synchronisiert werden, da der Inhalt leer ist oder die Quelle nicht mehr existiert."
+            ],
+            "Sync failed. Re-send to retry. Check the content exists and is not empty.": [
+                "Synchronisierung fehlgeschlagen. Erneut senden, um es erneut zu versuchen. Prüfen Sie, dass der Inhalt vorhanden ist und nicht leer ist."
+            ],
+            "Validate & Fix Synced Items": [
+                "Synchronisierte Elemente validieren und reparieren"
+            ],
+            "Choose which content types you want to include in your AI training data.": [
+                "Wählen Sie aus, welche Inhaltstypen Sie in Ihre KI-Trainingsdaten aufnehmen möchten."
+            ],
+            "Only Published content is included. Drafts, Private, and Pending posts are not available for AI training.": [
+                "Nur veröffentlichte Inhalte sind enthalten. Entwürfe, Private und ausstehende Beiträge stehen nicht für das KI-Training zur Verfügung."
+            ],
+            "Access Manager Notice": [
+                "Hinweis zum Zugriff-Manager"
+            ],
+            "Only publicly accessible articles can be uploaded to AI. Articles with access restrictions will not be included in the training data.": [
+                "Nur öffentlich zugängliche Artikel können zur KI hochgeladen werden. Artikel mit Zugriffsbeschränkungen werden nicht in die Trainingsdaten aufgenommen."
+            ],
+            "Loading content types...": [
+                "Lade Inhaltstypen..."
+            ],
+            "No content types available.": [
+                "Keine Inhaltstypen verfügbar."
+            ],
+            "excluded": [
+                "ausgeschlossen"
+            ],
+            "All eligible items already added to collection": [
+                "Alle berechtigten Elemente wurden bereits der Sammlung hinzugefügt"
+            ],
+            "No eligible content": [
+                "Kein geeigneter Inhalt vorhanden"
+            ],
+            "No articles for %s found. First create and publish articles.": [
+                "Für %s wurden keine Artikel gefunden. Erstellen und veröffentlichen Sie zuerst Artikel."
+            ],
+            "No %s found. First create and publish %s.": [
+                "Keine %s gefunden. Erstelle zuerst und veröffentliche %s."
+            ],
+            "Already in Collection": [
+                "Bereits in der Sammlung"
+            ],
+            "These content types have been added": [
+                "Diese Inhaltstypen wurden hinzugefügt"
+            ],
+            "Available to Add": [
+                "Zum Hinzufügen verfügbar"
+            ],
+            "Select items to include in training data": [
+                "Elemente auswählen, die in die Trainingsdaten aufgenommen werden sollen"
+            ],
+            "All available content types have been added.": [
+                "Alle verfügbaren Inhaltstypen wurden hinzugefügt."
+            ],
+            "No Content Available": [
+                "Kein Inhalt verfügbar"
+            ],
+            "Create and publish content first": [
+                "Erstellen und veröffentlichen Sie zuerst Inhalte"
+            ],
+            "Requires AI Pro": [
+                "Erfordert KI Pro"
+            ],
+            "Adding Data...": [
+                "Daten werden hinzugefügt..."
+            ],
+            "Add Data": [
+                "Daten hinzufügen"
+            ],
+            "Select items from the table and choose a sync method to update your AI training data.": [
+                "Wählen Sie Elemente aus der Tabelle aus und wählen Sie eine Synchronisierungsmethode, um Ihre KI-Trainingsdaten zu aktualisieren."
+            ],
+            "Run an extra validation pass to make sure the local database and the AI store stay in sync. If a file is missing from the AI store, it will be marked as outdated so it can be re-sent.": [
+                "Führen Sie einen zusätzlichen Validierungsdurchlauf aus, um sicherzustellen, dass die lokale Datenbank und der KI-Speicher synchron bleiben. Wenn eine Datei im KI-Speicher fehlt, wird sie als veraltet markiert, damit sie erneut gesendet werden kann."
+            ],
+            "This checks Added and Updated items already tracked in this collection and removes orphaned WordPress items, PDFs, and AI Notes found only in the AI store. No local database items are deleted.": [
+                "Dies überprüft hinzugefügte und aktualisierte Elemente, die bereits in dieser Sammlung verfolgt werden, und entfernt verwaiste WordPress-Elemente, PDFs und KI-Notizen, die nur im KI-Speicher gefunden wurden. Es werden keine lokalen Datenbankelemente gelöscht."
+            ],
+            "Collection:": [
+                "Sammlung:"
+            ],
+            "synced items ready to validate": [
+                "synchronisierte Elemente bereit zur Validierung"
+            ],
+            "No Added or Updated items are available yet. Validation can still remove orphaned WordPress items, PDFs, and AI Notes left only in the AI store.": [
+                "Es sind noch keine hinzugefügten oder aktualisierten Elemente verfügbar. Die Validierung kann dennoch verwaiste WordPress-Elemente, PDFs und KI-Notizen entfernen, die nur im KI-Speicher verblieben sind."
+            ],
+            "Cancel Verify": [
+                "Überprüfung abbrechen"
+            ],
+            "Validation in Progress...": [
+                "Validierung läuft..."
+            ],
+            "Manage your collection settings and data.": [
+                "Verwalten Sie Ihre Sammlungs-Einstellungen und -Daten."
+            ],
+            "Collection Name": [
+                "Sammlungsname"
+            ],
+            "Change the display name for this collection.": [
+                "Diesen Anzeigenamen dieser Sammlung ändern."
+            ],
+            "Unable to delete items. Please refresh the page and try again.": [
+                "Elemente können nicht gelöscht werden. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut."
+            ],
+            "Selected Records": [
+                "Ausgewählte Datensätze"
+            ],
+            "Delete the selected training data items from this collection.": [
+                "Die ausgewählten Trainingsdaten aus dieser Sammlung löschen."
+            ],
+            "This will permanently delete all training data in this collection.": [
+                "Dies wird alle Trainingsdaten in dieser Sammlung dauerhaft löschen."
+            ],
+            "Note added successfully": [
+                "Hinweis erfolgreich hinzugefügt"
+            ],
+            "AI Features Pro is not properly configured. Please ensure the plugin is activated.": [
+                "AI Features Pro ist nicht ordnungsgemäß konfiguriert. Bitte stellen Sie sicher, dass das Plugin aktiviert ist."
+            ],
+            "Failed to save note": [
+                "Hinweis konnte nicht gespeichert werden"
+            ],
+            "Unable to determine next collection ID": [
+                "Die nächste Sammlungs-ID konnte nicht bestimmt werden"
+            ],
+            "Creating new collection...": [
+                "Neue Sammlung wird erstellt..."
+            ],
+            "Collection created successfully": [
+                "Sammlung erfolgreich erstellt"
+            ],
+            "Sync in progress. Please wait...": [
+                "Synchronisierung läuft. Bitte warten Sie..."
+            ],
+            "No collections available. Click \"Add New\" to create one.": [
+                "Keine Sammlungen verfügbar. Klicken Sie auf \"Neu hinzufügen\", um eine zu erstellen."
+            ],
+            "No training data configuration available.": [
+                "Keine Trainingsdaten-Konfiguration verfügbar."
+            ]
+        }
+    }
+}

@@ -1,0 +1,282 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "es_ES",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Title": [
+                "Título"
+            ],
+            "Filter": [
+                "Filtro"
+            ],
+            "Status": [
+                "Estado"
+            ],
+            "All": [
+                "Todo"
+            ],
+            "Page": [
+                "Página"
+            ],
+            "Close": [
+                "Cerrar"
+            ],
+            "Cancel": [
+                "Cancelar"
+            ],
+            "selected": [
+                "seleccionado"
+            ],
+            "Delete": [
+                "Eliminar"
+            ],
+            "Article": [
+                "Artículo"
+            ],
+            "Updated": [
+                "Actualizado"
+            ],
+            "Next": [
+                "Siguiente"
+            ],
+            "Previous": [
+                "Anterior"
+            ],
+            "Loading...": [
+                "Cargando..."
+            ],
+            "Error": [
+                "Error"
+            ],
+            "Choose Training Data": [
+                "Elegir datos de entrenamiento"
+            ],
+            "Send Data to AI": [
+                "Enviar datos a la IA"
+            ],
+            "Thank you! Your report has been submitted successfully.": [
+                "¡Gracias! Su informe ha sido enviado con éxito."
+            ],
+            "Never": [
+                "Nunca"
+            ],
+            "Submitting...": [
+                "Enviando..."
+            ],
+            "Pending": [
+                "Pendiente"
+            ],
+            "of": [
+                "de"
+            ],
+            "Canceled": [
+                "Cancelado"
+            ],
+            "Skipped": [
+                "Omitido"
+            ],
+            "Refreshing...": [
+                "Actualizando..."
+            ],
+            "Refresh": [
+                "Actualizar"
+            ],
+            "Searching server for more results...": [
+                "Buscando más resultados en el servidor..."
+            ],
+            "Data refreshed successfully": [
+                "Datos actualizados con éxito"
+            ],
+            "Delete Selected Items": [
+                "Eliminar elementos seleccionados"
+            ],
+            "Are you sure you want to delete the selected items?": [
+                "¿Está seguro de eliminar los elementos seleccionados?"
+            ],
+            "Items deleted successfully": [
+                "Elementos eliminados con éxito"
+            ],
+            "Sort": [
+                "Ordenar"
+            ],
+            "Completed": [
+                "Completado"
+            ],
+            "Outdated": [
+                "Desactualizado"
+            ],
+            "Added": [
+                "Añadido"
+            ],
+            "Added:": [
+                "Añadido:"
+            ],
+            "Manage Notes and PDFs": [
+                "Gestionar notas y PDFs"
+            ],
+            "Deleting...": [
+                "Eliminando..."
+            ],
+            "Failed to load training data": [
+                "Error al cargar datos de entrenamiento"
+            ],
+            "Failed to delete items": [
+                "Error al eliminar elementos"
+            ],
+            "Sync failed": [
+                "Sincronización fallida"
+            ],
+            "Syncing": [
+                "Sincronizando"
+            ],
+            "How to get started": [
+                "Cómo empezar"
+            ],
+            "Pick the content types to include.": [
+                "Selecciona los tipos de contenido para incluir."
+            ],
+            "Select items in the table, then sync them.": [
+                "Selecciona los elementos de la tabla y luego sincronízalos."
+            ],
+            "Other Actions": [
+                "Otras acciones"
+            ],
+            "Rename the collection or delete items.": [
+                "Renombrar la colección o eliminar elementos."
+            ],
+            "Tip: Start with a small set to test the flow.": [
+                "Consejo: Empieza con un conjunto pequeño para probar el flujo."
+            ],
+            "Sync": [
+                "Sincronizar"
+            ],
+            "Sync Complete": [
+                "Sincronización completa"
+            ],
+            "Search by title, type, URL, or ID...": [
+                "Buscar por título, tipo, URL o ID..."
+            ],
+            "Preparing sync...": [
+                "Preparando sincronización..."
+            ],
+            "Loading training data...": [
+                "Cargando datos de aprendizaje automático..."
+            ],
+            "Type": [
+                "Tipo"
+            ],
+            "No training data found": [
+                "No se encontraron datos de aprendizaje automático"
+            ],
+            "Edit note": [
+                "Editar nota"
+            ],
+            "View Error": [
+                "Ver error"
+            ],
+            "View Info": [
+                "Ver información"
+            ],
+            "View content": [
+                "Ver contenido"
+            ],
+            "Failed to submit report.": [
+                "Error al enviar el informe."
+            ],
+            "An error occurred. Please try again.": [
+                "Ocurrió un error. Por favor, inténtalo de nuevo."
+            ],
+            "Submit this issue if you need help:": [
+                "Envíe este problema si necesita ayuda:"
+            ],
+            "Your email (optional)": [
+                "Correo electrónico (opcional)"
+            ],
+            "Submit to Us": [
+                "Envíenos"
+            ],
+            "Error Details": [
+                "Detalles del error"
+            ],
+            "Failed to load content": [
+                "Error al cargar el contenido"
+            ],
+            "Delete Items": [
+                "Eliminar elementos"
+            ],
+            "Post ID:": [
+                "ID de publicación:"
+            ],
+            "Loading content...": [
+                "Cargando contenido..."
+            ],
+            "Content Processing Warning": [
+                "Advertencia de procesamiento de contenido"
+            ],
+            "The HTML content of this post produced empty text after processing. This usually means the post contains only non-text elements (scripts, styles, embeds, etc.). The original HTML is shown below for inspection.": [
+                "El contenido HTML de esta entrada produjo texto vacío tras el procesamiento. Esto suele indicar que la entrada contiene solo elementos no textuales (scripts, estilos, incrustaciones, etc.). El HTML original se muestra a continuación para su revisión."
+            ],
+            "Original HTML Content": [
+                "Contenido HTML original"
+            ],
+            "No content available": [
+                "No hay contenido disponible"
+            ],
+            "Error Processing Content": [
+                "Error al procesar el contenido"
+            ],
+            "Delete from Training Data": [
+                "Eliminar de Datos de entrenamiento"
+            ],
+            "File Name:": [
+                "Nombre del archivo:"
+            ],
+            "Unknown file": [
+                "Archivo desconocido"
+            ],
+            "Stored as:": [
+                "Almacenado como:"
+            ],
+            "HTML": [
+                "HTML"
+            ],
+            "PDF": [
+                "PDF"
+            ],
+            "Original PDF:": [
+                "PDF original:"
+            ],
+            "Open PDF": [
+                "Abrir PDF"
+            ],
+            "If this stored URL no longer works, the original PDF is no longer available from this training data record.": [
+                "Si esta URL almacenada ya no funciona, el PDF original ya no está disponible en este registro de datos de entrenamiento."
+            ],
+            "No original URL is stored for this upload. Only the saved file information is available here.": [
+                "No se ha almacenado ninguna URL original para esta subida. Aquí solo está disponible la información del archivo guardado."
+            ],
+            "Provider:": [
+                "Proveedor:"
+            ],
+            "AI File ID:": [
+                "ID de archivo de IA:"
+            ],
+            "Last Synced:": [
+                "Última sincronización:"
+            ],
+            "AI-Ready Content": [
+                "Contenido listo para IA"
+            ],
+            "Original Content": [
+                "Contenido original"
+            ],
+            "No AI-ready content available": [
+                "No hay contenido listo para IA disponible"
+            ]
+        }
+    }
+}

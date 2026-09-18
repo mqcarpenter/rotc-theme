@@ -1,0 +1,54 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "ja",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Settings": [
+                "設定"
+            ],
+            "Learn More": [
+                "さらに詳しく"
+            ],
+            "AI Features": [
+                "AI機能"
+            ],
+            "See Demo Quiz": [
+                "デモクイズを見る"
+            ],
+            "General Settings": [
+                "一般設定"
+            ],
+            "This Knowledge Base AI Is Not Enabled": [
+                "このナレッジベースAIは有効になっていません"
+            ],
+            "AI features are optional and turned off by default. AI will only work after you manually enable it and add your own API key in ": [
+                "AI機能はオプションで、デフォルトではオフです。AIは手動で有効化し、独自のAPIキーを追加した後にのみ動作します"
+            ],
+            "Latest AI Updates": [
+                "最新のAIアップデート"
+            ],
+            "Learn more": [
+                "詳しく見る"
+            ],
+            "Failed to enable feature.": [
+                "機能の有効化に失敗しました。."
+            ],
+            "FREE": [
+                "無料"
+            ],
+            "Enabling...": [
+                "有効化しています..."
+            ],
+            "Free Features": [
+                "無料機能"
+            ],
+            "AI Feature Plugin": [
+                "AI機能プラグイン"
+            ]
+        }
+    }
+}

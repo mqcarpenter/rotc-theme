@@ -1,0 +1,87 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "nb_NO",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Close": [
+                "Lukk"
+            ],
+            "Cancel": [
+                "Avbryt"
+            ],
+            "Next": [
+                "Neste"
+            ],
+            "AI Features": [
+                "AI-funksjoner"
+            ],
+            "OFF": [
+                "AV"
+            ],
+            "Use code:": [
+                "Bruk kode:"
+            ],
+            "Copy": [
+                "Kopier"
+            ],
+            "Documentation": [
+                "Dokumentasjon"
+            ],
+            "Copied!": [
+                "Kopiert!"
+            ],
+            "Got it!": [
+                "Forstått!"
+            ],
+            "Show Me": [
+                "Vis meg"
+            ],
+            "Loading...": [
+                "Laster..."
+            ],
+            "Go to General Settings": [
+                "Gå til Generelle innstillinger"
+            ],
+            "Go to Settings": [
+                "Gå til Innstillinger"
+            ],
+            "Your session has expired. Please refresh the page to log in again.": [
+                "Økten din har utløpt. Oppdater siden for å logge inn igjen."
+            ],
+            "Too many requests. Please wait a moment and try again.": [
+                "For mange forespørsler. Vennligst vent et øyeblikk og prøv igjen."
+            ],
+            "An unexpected error occurred. Please try again.": [
+                "En uventet feil oppstod. Vennligst prøv igjen."
+            ],
+            "Confirm Action": [
+                "Bekreft handling"
+            ],
+            "Are you sure you want to proceed?": [
+                "Er du sikker på at du vil fortsette?"
+            ],
+            "Confirm": [
+                "Bekreft"
+            ],
+            "Setup Steps": [
+                "Oppsettstrinn"
+            ],
+            "To use AI features, please configure your API key and accept the data privacy agreement in General Settings.": [
+                "For å bruke AI-funksjoner må du konfigurere API-nøkkelen din og godta personvernavtalen i Generelle innstillinger."
+            ],
+            "Session Expired": [
+                "Økten utløpt"
+            ],
+            "Refresh Page": [
+                "Oppdater siden"
+            ],
+            "No results found": [
+                "Ingen resultater funnet"
+            ]
+        }
+    }
+}

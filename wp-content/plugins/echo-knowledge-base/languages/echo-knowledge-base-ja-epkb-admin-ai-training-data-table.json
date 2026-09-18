@@ -1,0 +1,282 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "ja",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Title": [
+                "タイトル"
+            ],
+            "Filter": [
+                "フィルター"
+            ],
+            "Status": [
+                "ステータス"
+            ],
+            "All": [
+                "すべて"
+            ],
+            "Page": [
+                "固定ページ"
+            ],
+            "Close": [
+                "閉じる"
+            ],
+            "Cancel": [
+                "キャンセル"
+            ],
+            "selected": [
+                "選択済み"
+            ],
+            "Delete": [
+                "削除"
+            ],
+            "Article": [
+                "記事"
+            ],
+            "Updated": [
+                "更新済み"
+            ],
+            "Next": [
+                "次"
+            ],
+            "Previous": [
+                "前"
+            ],
+            "Loading...": [
+                "読み込み中…"
+            ],
+            "Error": [
+                "エラー"
+            ],
+            "Choose Training Data": [
+                "機械学習データを選択"
+            ],
+            "Send Data to AI": [
+                "データをAIに送信"
+            ],
+            "Thank you! Your report has been submitted successfully.": [
+                "ありがとうございます！レポートが正常に送信されました。."
+            ],
+            "Never": [
+                "決して"
+            ],
+            "Submitting...": [
+                "送信中..."
+            ],
+            "Pending": [
+                "承認待ち"
+            ],
+            "of": [
+                "の"
+            ],
+            "Canceled": [
+                "キャンセル済み"
+            ],
+            "Skipped": [
+                "スキップ済み"
+            ],
+            "Refreshing...": [
+                "更新しています..."
+            ],
+            "Refresh": [
+                "更新"
+            ],
+            "Searching server for more results...": [
+                "サーバーから追加の結果を検索しています..."
+            ],
+            "Data refreshed successfully": [
+                "データを正常に更新しました"
+            ],
+            "Delete Selected Items": [
+                "選択した項目を削除"
+            ],
+            "Are you sure you want to delete the selected items?": [
+                "選択した項目を削除してもよろしいですか？"
+            ],
+            "Items deleted successfully": [
+                "選択した項目は正常に削除されました"
+            ],
+            "Sort": [
+                "並べ替え"
+            ],
+            "Completed": [
+                "完了済み"
+            ],
+            "Outdated": [
+                "時代遅れ"
+            ],
+            "Added": [
+                "追加済み"
+            ],
+            "Added:": [
+                "追加済み:"
+            ],
+            "Manage Notes and PDFs": [
+                "ノートとPDFを管理"
+            ],
+            "Deleting...": [
+                "削除中..."
+            ],
+            "Failed to load training data": [
+                "機械学習データの読み込みに失敗しました"
+            ],
+            "Failed to delete items": [
+                "アイテムの削除に失敗しました"
+            ],
+            "Sync failed": [
+                "同期に失敗しました"
+            ],
+            "Syncing": [
+                "同期中"
+            ],
+            "How to get started": [
+                "はじめ方"
+            ],
+            "Pick the content types to include.": [
+                "含めるコンテンツタイプを選択してください。."
+            ],
+            "Select items in the table, then sync them.": [
+                "表の項目を選択してから同期します。."
+            ],
+            "Other Actions": [
+                "その他の操作"
+            ],
+            "Rename the collection or delete items.": [
+                "コレクション名を変更するか、アイテムを削除します。."
+            ],
+            "Tip: Start with a small set to test the flow.": [
+                "ヒント: 処理の流れをテストするために、少量のセットで始めてください。."
+            ],
+            "Sync": [
+                "同期"
+            ],
+            "Sync Complete": [
+                "同期完了"
+            ],
+            "Search by title, type, URL, or ID...": [
+                "タイトル、タイプ、URL、またはIDで検索..."
+            ],
+            "Preparing sync...": [
+                "同期を準備しています..."
+            ],
+            "Loading training data...": [
+                "機械学習データを読み込み中..."
+            ],
+            "Type": [
+                "タイプ"
+            ],
+            "No training data found": [
+                "機械学習データが見つかりませんでした"
+            ],
+            "Edit note": [
+                "メモを編集"
+            ],
+            "View Error": [
+                "エラーを表示"
+            ],
+            "View Info": [
+                "情報を表示"
+            ],
+            "View content": [
+                "コンテンツを表示"
+            ],
+            "Failed to submit report.": [
+                "レポートの送信に失敗しました。."
+            ],
+            "An error occurred. Please try again.": [
+                "エラーが発生しました。もう一度お試しください。."
+            ],
+            "Submit this issue if you need help:": [
+                "サポートが必要な場合は、この問題を送信してください："
+            ],
+            "Your email (optional)": [
+                "メールアドレス（任意）"
+            ],
+            "Submit to Us": [
+                "私たちに送信"
+            ],
+            "Error Details": [
+                "エラー詳細"
+            ],
+            "Failed to load content": [
+                "コンテンツの読み込みに失敗しました"
+            ],
+            "Delete Items": [
+                "アイテムを削除"
+            ],
+            "Post ID:": [
+                "投稿ID:"
+            ],
+            "Loading content...": [
+                "コンテンツを読み込み中..."
+            ],
+            "Content Processing Warning": [
+                "コンテンツ処理の警告"
+            ],
+            "The HTML content of this post produced empty text after processing. This usually means the post contains only non-text elements (scripts, styles, embeds, etc.). The original HTML is shown below for inspection.": [
+                "この投稿の HTML コンテンツは処理後に空のテキストを生成しました。これは通常、投稿にスクリプト、スタイル、埋め込みなどの非テキスト要素のみが含まれていることを意味します。点検のため、以下に元の HTML を表示します。."
+            ],
+            "Original HTML Content": [
+                "元の HTML コンテンツ"
+            ],
+            "No content available": [
+                "利用可能なコンテンツがありません"
+            ],
+            "Error Processing Content": [
+                "コンテンツの処理中にエラーが発生しました"
+            ],
+            "Delete from Training Data": [
+                "機械学習データから削除"
+            ],
+            "File Name:": [
+                "ファイル名："
+            ],
+            "Unknown file": [
+                "不明なファイル"
+            ],
+            "Stored as:": [
+                "保存形式:"
+            ],
+            "HTML": [
+                "HTML"
+            ],
+            "PDF": [
+                "PDF"
+            ],
+            "Original PDF:": [
+                "元の PDF："
+            ],
+            "Open PDF": [
+                "PDF を開く"
+            ],
+            "If this stored URL no longer works, the original PDF is no longer available from this training data record.": [
+                "この保存済み URL が機能しなくなった場合、元の PDF はこの機械学習データのレコードからは利用できなくなります。."
+            ],
+            "No original URL is stored for this upload. Only the saved file information is available here.": [
+                "このアップロードには元のURLが保存されていません。ここでは保存されたファイル情報のみが利用可能です。."
+            ],
+            "Provider:": [
+                "提供元："
+            ],
+            "AI File ID:": [
+                "AI ファイル ID："
+            ],
+            "Last Synced:": [
+                "最終同期日時："
+            ],
+            "AI-Ready Content": [
+                "AI対応コンテンツ"
+            ],
+            "Original Content": [
+                "元のコンテンツ"
+            ],
+            "No AI-ready content available": [
+                "利用可能なAI対応コンテンツはありません"
+            ]
+        }
+    }
+}

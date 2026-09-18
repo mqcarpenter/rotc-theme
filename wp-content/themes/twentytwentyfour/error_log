@@ -1,0 +1,12 @@
+[23-Nov-2025 13:17:51 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/otbdesig/returnofthechampions.com/wp-content/themes/twentytwentyfour/functions.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/otbdesig/returnofthechampions.com/wp-content/themes/twentytwentyfour/functions.php on line 147
+[27-Jan-2026 19:35:48 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/otbdesig/returnofthechampions.com/wp-content/themes/twentytwentyfour/functions.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/otbdesig/returnofthechampions.com/wp-content/themes/twentytwentyfour/functions.php on line 147
+[29-Jan-2026 18:09:50 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/otbdesig/returnofthechampions.com/wp-content/themes/twentytwentyfour/functions.php:147
+Stack trace:
+#0 {main}
+  thrown in /home/otbdesig/returnofthechampions.com/wp-content/themes/twentytwentyfour/functions.php on line 147

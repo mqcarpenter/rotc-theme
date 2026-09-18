@@ -1,0 +1,303 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "sv_SE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Restore": [
+                "Återställ"
+            ],
+            "Settings": [
+                "Inställningar"
+            ],
+            "All": [
+                "Alla"
+            ],
+            "Page": [
+                "Sida"
+            ],
+            "Settings saved successfully": [
+                "Inställningar sparades"
+            ],
+            "Cancel": [
+                "Avbryt"
+            ],
+            "Save Settings": [
+                "Spara inställningar"
+            ],
+            "Delete": [
+                "Ta bort"
+            ],
+            "Next": [
+                "Nästa"
+            ],
+            "Previous": [
+                "Föregående"
+            ],
+            "OFF": [
+                "AV"
+            ],
+            "Errors": [
+                "Fel"
+            ],
+            "Reset": [
+                "Återställ"
+            ],
+            "Saving...": [
+                "Sparar …"
+            ],
+            "Error": [
+                "Fel"
+            ],
+            "Go to General Settings": [
+                "Gå till allmänna inställningar"
+            ],
+            "Chat History": [
+                "Chatthistorik"
+            ],
+            "API Configuration": [
+                "API-konfiguration"
+            ],
+            "Feedback": [
+                "Återkoppling"
+            ],
+            "AI Assistant": [
+                "AI-assistent"
+            ],
+            "Name": [
+                "Namn"
+            ],
+            "Email": [
+                "E-post"
+            ],
+            "Message": [
+                "Meddelande"
+            ],
+            "Delete Selected": [
+                "Ta bort valda"
+            ],
+            "of": [
+                "av"
+            ],
+            "Phone": [
+                "Telefon"
+            ],
+            "Requires AI Features PRO": [
+                "Kräver AI-funktioner PRO"
+            ],
+            "with code": [
+                "med kod"
+            ],
+            "Thumbs up (%d)": [
+                "Tummen upp (%d)"
+            ],
+            "Thumbs up": [
+                "Tummen upp"
+            ],
+            "Thumbs down (%d)": [
+                "Tummen ned (%d)"
+            ],
+            "Thumbs down": [
+                "Tummen ned"
+            ],
+            "Contact an Agent clicked": [
+                "Kontakta en agent klickades"
+            ],
+            "Agent handover request submitted": [
+                "Överföringsförfrågan till agenten skickad"
+            ],
+            "Trigger": [
+                "Utlösare"
+            ],
+            "AI error recorded in this conversation": [
+                "AI-fel registrerat i denna konversation"
+            ],
+            "Are you sure you want to delete the selected conversations?": [
+                "Är du säker på att du vill ta bort de valda konversationerna?"
+            ],
+            "Delete Conversations": [
+                "Ta bort konversationer"
+            ],
+            "Deleting conversations...": [
+                "Raderar konversationer..."
+            ],
+            "Conversations refreshed successfully": [
+                "Konversationer uppdaterades"
+            ],
+            "Archive Conversations": [
+                "Arkivera samtal"
+            ],
+            "Are you sure you want to archive the selected conversations?": [
+                "Är du säker på att du vill arkivera de valda samtalen?"
+            ],
+            "Archive": [
+                "Arkivera"
+            ],
+            "Archiving conversations...": [
+                "Arkiverar samtal..."
+            ],
+            "Restore Conversations": [
+                "Återställ samtal"
+            ],
+            "Are you sure you want to restore the selected conversations?": [
+                "Är du säker på att du vill återställa de valda samtalen?"
+            ],
+            "Restoring conversations...": [
+                "Återställer samtal..."
+            ],
+            "Agent handover request": [
+                "Överföringsförfrågan till agenten"
+            ],
+            "Active": [
+                "Aktiv"
+            ],
+            "Archived": [
+                "Arkiverad"
+            ],
+            "Search conversations...": [
+                "Sök konversationer..."
+            ],
+            "Refreshing...": [
+                "Uppdaterar..."
+            ],
+            "Refresh": [
+                "Uppdatera"
+            ],
+            "Archive Selected": [
+                "Arkivera markerade"
+            ],
+            "Restore Selected": [
+                "Återställ markerade"
+            ],
+            "Loading conversations...": [
+                "Laddar konversationer..."
+            ],
+            "No conversations found": [
+                "Inga konversationer hittades"
+            ],
+            "Time": [
+                "Tid"
+            ],
+            "User": [
+                "Användare"
+            ],
+            "Conversation": [
+                "Samtal"
+            ],
+            "Message Count": [
+                "Antal meddelanden"
+            ],
+            "Agent Handover": [
+                "Agentöverföring"
+            ],
+            "The most recent AI request failed for this conversation": [
+                "Den senaste AI-begäran misslyckades för denna konversation"
+            ],
+            "An earlier AI request failed during this conversation": [
+                "En tidigare AI-begäran misslyckades under denna konversation"
+            ],
+            "Failed": [
+                "Misslyckades"
+            ],
+            "Error Logged": [
+                "Fel loggat"
+            ],
+            "Number of messages": [
+                "Antal meddelanden"
+            ],
+            "Searching server for more results...": [
+                "Söker efter fler resultat från servern..."
+            ],
+            "Deleting conversation...": [
+                "Raderar konversation..."
+            ],
+            "Archiving conversation...": [
+                "Arkiverar samtal..."
+            ],
+            "Restoring conversation...": [
+                "Återställer samtal..."
+            ],
+            "Conversation Details": [
+                "Samtalsdetaljer"
+            ],
+            "Select a conversation to view details": [
+                "Välj ett samtal för att visa detaljer"
+            ],
+            "Conversation Summary": [
+                "Samtalsöversikt"
+            ],
+            "Full Conversation": [
+                "Hela konversationen"
+            ],
+            "AI Error": [
+                "AI-fel"
+            ],
+            "No messages in this conversation.": [
+                "Inga meddelanden i denna konversation."
+            ],
+            "Collection": [
+                "Samling"
+            ],
+            "Are you sure you want to reset to default instructions?": [
+                "Är du säker på att du vill återställa till standardinstruktioner؟"
+            ],
+            "Reset Instructions": [
+                "Återställ instruktioner"
+            ],
+            "Are you sure you want to reset to default instructions? Your custom instructions will be lost.": [
+                "Är du säker på att du vill återställa till standardinstruktioner? Dina anpassade instruktioner kommer att gå förlorade."
+            ],
+            "Reset to Default": [
+                "Återställ till standard"
+            ],
+            "Training data issues detected": [
+                "Problem med maskininlärningsdata har upptäckts"
+            ],
+            "AI Chat cannot use the selected collection until these issues are fixed in Training Data.": [
+                "AI-chatt kan inte använda den valda samlingen förrän dessa problem är åtgärdade i maskininlärningsdata."
+            ],
+            "Failed to load conversations": [
+                "Misslyckades med att ladda konversationer"
+            ],
+            "Failed to save settings": [
+                "Misslyckades med att spara inställningar"
+            ],
+            "Conversations deleted successfully": [
+                "Konversationer raderades framgångsrikt"
+            ],
+            "Failed to delete conversations": [
+                "Misslyckades med att radera konversationer"
+            ],
+            "Conversations archived successfully": [
+                "Samtal arkiverades framgångsrikt"
+            ],
+            "Failed to archive conversations": [
+                "Misslyckades med att arkivera samtal"
+            ],
+            "Conversations restored successfully": [
+                "Samtal återställdes framgångsrikt"
+            ],
+            "Failed to restore conversations": [
+                "Misslyckades med att återställa samtal"
+            ],
+            "AI Chat is Disabled": [
+                "AI Chatt är inaktiverad"
+            ],
+            "To view chat history, please enable AI Chat in the Settings tab.": [
+                "För att visa chatthistorik, vänligen aktivera AI Chatt i Fliken Inställningar."
+            ],
+            "Go to Settings": [
+                "Gå till Inställningar"
+            ],
+            "API key is not configured. Please configure it in General Settings to use AI Chat features.": [
+                "API-nyckel är inte konfigurerad. Vänligen konfigurera den i Allmänna inställningar för att använda AI-chattfunktioner."
+            ],
+            "Please accept the data privacy agreement in General Settings to use AI Chat features.": [
+                "Vänligen acceptera dataskyddsavtalet i Allmänna inställningar för att använda AI Chatt-funktioner."
+            ]
+        }
+    }
+}

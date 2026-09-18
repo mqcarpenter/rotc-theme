@@ -1,0 +1,16 @@
+[10-Jun-2026 00:56:07 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/otbdesig/returnofthechampions.com/wp-content/themes/seos-football/inc/customizer.php:635
+Stack trace:
+#0 {main}
+  thrown in /home/otbdesig/returnofthechampions.com/wp-content/themes/seos-football/inc/customizer.php on line 635
+[10-Jun-2026 00:56:08 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/otbdesig/returnofthechampions.com/wp-content/themes/seos-football/inc/extras.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/otbdesig/returnofthechampions.com/wp-content/themes/seos-football/inc/extras.php on line 25
+[10-Jun-2026 00:56:09 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/otbdesig/returnofthechampions.com/wp-content/themes/seos-football/inc/jetpack.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/otbdesig/returnofthechampions.com/wp-content/themes/seos-football/inc/jetpack.php on line 16
+[10-Jun-2026 00:56:10 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/otbdesig/returnofthechampions.com/wp-content/themes/seos-football/inc/template-tags.php:119
+Stack trace:
+#0 {main}
+  thrown in /home/otbdesig/returnofthechampions.com/wp-content/themes/seos-football/inc/template-tags.php on line 119

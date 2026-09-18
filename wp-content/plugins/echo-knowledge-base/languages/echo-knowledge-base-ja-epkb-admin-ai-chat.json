@@ -1,0 +1,303 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "ja",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Restore": [
+                "復元"
+            ],
+            "Settings": [
+                "設定"
+            ],
+            "All": [
+                "すべて"
+            ],
+            "Page": [
+                "固定ページ"
+            ],
+            "Settings saved successfully": [
+                "設定が正常に保存されました"
+            ],
+            "Cancel": [
+                "キャンセル"
+            ],
+            "Save Settings": [
+                "設定を保存"
+            ],
+            "Delete": [
+                "削除"
+            ],
+            "Next": [
+                "次"
+            ],
+            "Previous": [
+                "前"
+            ],
+            "OFF": [
+                "オフ"
+            ],
+            "Errors": [
+                "エラー"
+            ],
+            "Reset": [
+                "リセット"
+            ],
+            "Saving...": [
+                "保存中..."
+            ],
+            "Error": [
+                "エラー"
+            ],
+            "Go to General Settings": [
+                "一般設定へ移動"
+            ],
+            "Chat History": [
+                "チャット履歴"
+            ],
+            "API Configuration": [
+                "API 設定"
+            ],
+            "Feedback": [
+                "フィードバック"
+            ],
+            "AI Assistant": [
+                "AIアシスタント"
+            ],
+            "Name": [
+                "名前"
+            ],
+            "Email": [
+                "メール"
+            ],
+            "Message": [
+                "メッセージ"
+            ],
+            "Delete Selected": [
+                "選択した項目を削除"
+            ],
+            "of": [
+                "の"
+            ],
+            "Phone": [
+                "電話"
+            ],
+            "Requires AI Features PRO": [
+                "AI機能 PRO が必要です"
+            ],
+            "with code": [
+                "コード付き"
+            ],
+            "Thumbs up (%d)": [
+                "いいね (%d)"
+            ],
+            "Thumbs up": [
+                "いいね"
+            ],
+            "Thumbs down (%d)": [
+                "反対票 (%d)"
+            ],
+            "Thumbs down": [
+                "低評価"
+            ],
+            "Contact an Agent clicked": [
+                "エージェントへの連絡をクリックしました"
+            ],
+            "Agent handover request submitted": [
+                "エージェントへの引継ぎ依頼を送信しました"
+            ],
+            "Trigger": [
+                "トリガー"
+            ],
+            "AI error recorded in this conversation": [
+                "この会話で AI エラーが記録されました"
+            ],
+            "Are you sure you want to delete the selected conversations?": [
+                "選択した会話を削除してもよろしいですか？"
+            ],
+            "Delete Conversations": [
+                "会話を削除"
+            ],
+            "Deleting conversations...": [
+                "会話を削除しています..."
+            ],
+            "Conversations refreshed successfully": [
+                "会話を正常に更新しました"
+            ],
+            "Archive Conversations": [
+                "会話をアーカイブする"
+            ],
+            "Are you sure you want to archive the selected conversations?": [
+                "選択した会話をアーカイブしてもよろしいですか？"
+            ],
+            "Archive": [
+                "アーカイブ"
+            ],
+            "Archiving conversations...": [
+                "会話をアーカイブしています..."
+            ],
+            "Restore Conversations": [
+                "会話を復元する"
+            ],
+            "Are you sure you want to restore the selected conversations?": [
+                "選択した会話を復元してもよろしいですか？"
+            ],
+            "Restoring conversations...": [
+                "会話を復元しています..."
+            ],
+            "Agent handover request": [
+                "エージェントへの引継ぎ依頼"
+            ],
+            "Active": [
+                "アクティブ"
+            ],
+            "Archived": [
+                "アーカイブ済み"
+            ],
+            "Search conversations...": [
+                "会話を検索しています..."
+            ],
+            "Refreshing...": [
+                "更新しています..."
+            ],
+            "Refresh": [
+                "更新"
+            ],
+            "Archive Selected": [
+                "選択をアーカイブする"
+            ],
+            "Restore Selected": [
+                "選択を復元する"
+            ],
+            "Loading conversations...": [
+                "会話を読み込み中..."
+            ],
+            "No conversations found": [
+                "会話が見つかりませんでした"
+            ],
+            "Time": [
+                "時間"
+            ],
+            "User": [
+                "ユーザー"
+            ],
+            "Conversation": [
+                "会話"
+            ],
+            "Message Count": [
+                "メッセージ数"
+            ],
+            "Agent Handover": [
+                "エージェントへの引継ぎ"
+            ],
+            "The most recent AI request failed for this conversation": [
+                "この会話の最新の AI リクエストが失敗しました"
+            ],
+            "An earlier AI request failed during this conversation": [
+                "この会話の途中で以前の AI リクエストが失敗しました"
+            ],
+            "Failed": [
+                "失敗"
+            ],
+            "Error Logged": [
+                "エラーが記録されました"
+            ],
+            "Number of messages": [
+                "メッセージの総数"
+            ],
+            "Searching server for more results...": [
+                "サーバーから追加の結果を検索しています..."
+            ],
+            "Deleting conversation...": [
+                "会話を削除しています..."
+            ],
+            "Archiving conversation...": [
+                "会話をアーカイブしています..."
+            ],
+            "Restoring conversation...": [
+                "会話を復元しています..."
+            ],
+            "Conversation Details": [
+                "会話の詳細"
+            ],
+            "Select a conversation to view details": [
+                "詳細を表示する会話を選択してください"
+            ],
+            "Conversation Summary": [
+                "会話の要約"
+            ],
+            "Full Conversation": [
+                "全会話"
+            ],
+            "AI Error": [
+                "AIエラー"
+            ],
+            "No messages in this conversation.": [
+                "この会話にはメッセージがありません。."
+            ],
+            "Collection": [
+                "コレクション"
+            ],
+            "Are you sure you want to reset to default instructions?": [
+                "デフォルトの指示にリセットしてもよろしいですか？"
+            ],
+            "Reset Instructions": [
+                "指示をリセット"
+            ],
+            "Are you sure you want to reset to default instructions? Your custom instructions will be lost.": [
+                "デフォルトの指示にリセットしてもよろしいですか？カスタム指示は失われます。."
+            ],
+            "Reset to Default": [
+                "デフォルトに戻す"
+            ],
+            "Training data issues detected": [
+                "機械学習データの問題が検出されました"
+            ],
+            "AI Chat cannot use the selected collection until these issues are fixed in Training Data.": [
+                "AI チャットは、機械学習データのこれらの問題が修正されるまで、選択したコレクションを使用できません。."
+            ],
+            "Failed to load conversations": [
+                "会話の読み込みに失敗しました"
+            ],
+            "Failed to save settings": [
+                "設定の保存に失敗しました"
+            ],
+            "Conversations deleted successfully": [
+                "会話の削除に成功しました"
+            ],
+            "Failed to delete conversations": [
+                "会話の削除に失敗しました"
+            ],
+            "Conversations archived successfully": [
+                "会話を正常にアーカイブしました"
+            ],
+            "Failed to archive conversations": [
+                "会話のアーカイブに失敗しました"
+            ],
+            "Conversations restored successfully": [
+                "会話を正常に復元しました"
+            ],
+            "Failed to restore conversations": [
+                "会話の復元に失敗しました"
+            ],
+            "AI Chat is Disabled": [
+                "AI チャットは無効です"
+            ],
+            "To view chat history, please enable AI Chat in the Settings tab.": [
+                "チャット履歴を表示するには、設定タブで AI チャットを有効にしてください。."
+            ],
+            "Go to Settings": [
+                "設定へ移動"
+            ],
+            "API key is not configured. Please configure it in General Settings to use AI Chat features.": [
+                "API キーが設定されていません。AI チャット機能を使用するには、一般設定で API キーを設定してください。."
+            ],
+            "Please accept the data privacy agreement in General Settings to use AI Chat features.": [
+                "AI チャット機能を使用するには、一般設定でデータプライバシー同意を承認してください。."
+            ]
+        }
+    }
+}

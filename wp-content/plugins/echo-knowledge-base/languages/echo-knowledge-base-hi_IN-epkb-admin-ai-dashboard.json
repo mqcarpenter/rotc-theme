@@ -1,0 +1,54 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "hi_IN",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Settings": [
+                "सेटिंग्स"
+            ],
+            "Learn More": [
+                "अधिक जानकारी"
+            ],
+            "AI Features": [
+                "एआई सुविधाएँ"
+            ],
+            "See Demo Quiz": [
+                "डेमो क्विज़ देखें"
+            ],
+            "General Settings": [
+                "सामान्य सेटिंग्स"
+            ],
+            "This Knowledge Base AI Is Not Enabled": [
+                "यह ज्ञान-आधार एआई सक्षम नहीं है"
+            ],
+            "AI features are optional and turned off by default. AI will only work after you manually enable it and add your own API key in ": [
+                "एआई सुविधाएँ वैकल्पिक हैं और डिफ़ॉल्ट रूप से बंद हैं। एआई तब ही काम करेगा जब आप इसे मैन्युअल रूप से सक्षम करें और अपनी API कुंजी को में जोड़ दें"
+            ],
+            "Latest AI Updates": [
+                "ताज़ा एआई अपडेट्स"
+            ],
+            "Learn more": [
+                "अधिक जानें"
+            ],
+            "Failed to enable feature.": [
+                "सुविधा सक्षम करने में विफल।."
+            ],
+            "FREE": [
+                "मुफ़्त"
+            ],
+            "Enabling...": [
+                "सक्षम किया जा रहा है..."
+            ],
+            "Free Features": [
+                "मुफ़्त सुविधाएँ"
+            ],
+            "AI Feature Plugin": [
+                "AI फ़ीचर प्लगइन"
+            ]
+        }
+    }
+}

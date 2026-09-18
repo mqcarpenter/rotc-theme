@@ -1,0 +1,282 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "de_DE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Title": [
+                "Titel"
+            ],
+            "Filter": [
+                "Filter"
+            ],
+            "Status": [
+                "Status"
+            ],
+            "All": [
+                "Alle"
+            ],
+            "Page": [
+                "Seite"
+            ],
+            "Close": [
+                "Schließen"
+            ],
+            "Cancel": [
+                "Abbrechen"
+            ],
+            "selected": [
+                "ausgewählt"
+            ],
+            "Delete": [
+                "Löschen"
+            ],
+            "Article": [
+                "Dokumentationsseite"
+            ],
+            "Updated": [
+                "Aktualisiert"
+            ],
+            "Next": [
+                "Weiter"
+            ],
+            "Previous": [
+                "Zurück"
+            ],
+            "Loading...": [
+                "Wird geladen..."
+            ],
+            "Error": [
+                "Fehler"
+            ],
+            "Choose Training Data": [
+                "Daten zum maschinellen Lernen auswählen"
+            ],
+            "Send Data to AI": [
+                "Daten an KI senden"
+            ],
+            "Thank you! Your report has been submitted successfully.": [
+                "Danke! Ihr Bericht wurde erfolgreich eingereicht."
+            ],
+            "Never": [
+                "Nie"
+            ],
+            "Submitting...": [
+                "Wird gesendet..."
+            ],
+            "Pending": [
+                "Ausstehend"
+            ],
+            "of": [
+                "von"
+            ],
+            "Canceled": [
+                "Abgebrochen"
+            ],
+            "Skipped": [
+                "Übersprungen"
+            ],
+            "Refreshing...": [
+                "Aktualisiere..."
+            ],
+            "Refresh": [
+                "Aktualisieren"
+            ],
+            "Searching server for more results...": [
+                "Server sucht nach weiteren Ergebnissen..."
+            ],
+            "Data refreshed successfully": [
+                "Daten erfolgreich aktualisiert"
+            ],
+            "Delete Selected Items": [
+                "Ausgewählte Elemente löschen"
+            ],
+            "Are you sure you want to delete the selected items?": [
+                "Möchten Sie die ausgewählten Elemente wirklich löschen?"
+            ],
+            "Items deleted successfully": [
+                "Ausgewählte Elemente wurden erfolgreich gelöscht"
+            ],
+            "Sort": [
+                "Sortieren"
+            ],
+            "Completed": [
+                "Abgeschlossen"
+            ],
+            "Outdated": [
+                "Veraltet"
+            ],
+            "Added": [
+                "Hinzugefügt"
+            ],
+            "Added:": [
+                "Hinzugefügt:"
+            ],
+            "Manage Notes and PDFs": [
+                "Notizen und PDFs verwalten"
+            ],
+            "Deleting...": [
+                "Löschen..."
+            ],
+            "Failed to load training data": [
+                "Fehler beim Laden von Daten zum maschinellen Lernen"
+            ],
+            "Failed to delete items": [
+                "Fehler beim Löschen von Elementen"
+            ],
+            "Sync failed": [
+                "Synchronisierung fehlgeschlagen"
+            ],
+            "Syncing": [
+                "Synchronisierung läuft"
+            ],
+            "How to get started": [
+                "So starten Sie"
+            ],
+            "Pick the content types to include.": [
+                "Wählen Sie die Inhaltstypen aus, die eingeschlossen werden sollen."
+            ],
+            "Select items in the table, then sync them.": [
+                "Wählen Sie Elemente in der Tabelle aus, dann synchronisieren Sie sie."
+            ],
+            "Other Actions": [
+                "Weitere Aktionen"
+            ],
+            "Rename the collection or delete items.": [
+                "Die Sammlung umbenennen oder Elemente löschen."
+            ],
+            "Tip: Start with a small set to test the flow.": [
+                "Tipp: Beginnen Sie mit einem kleinen Datensatz, um den Ablauf zu testen."
+            ],
+            "Sync": [
+                "Synchronisieren"
+            ],
+            "Sync Complete": [
+                "Synchronisierung abgeschlossen"
+            ],
+            "Search by title, type, URL, or ID...": [
+                "Suche nach Titel, Typ, URL oder ID..."
+            ],
+            "Preparing sync...": [
+                "Synchronisierung wird vorbereitet..."
+            ],
+            "Loading training data...": [
+                "Lade Trainingsdaten..."
+            ],
+            "Type": [
+                "Typ"
+            ],
+            "No training data found": [
+                "Keine Trainingsdaten gefunden"
+            ],
+            "Edit note": [
+                "Notiz bearbeiten"
+            ],
+            "View Error": [
+                "Fehler anzeigen"
+            ],
+            "View Info": [
+                "Info anzeigen"
+            ],
+            "View content": [
+                "Inhalt anzeigen"
+            ],
+            "Failed to submit report.": [
+                "Bericht konnte nicht gesendet werden."
+            ],
+            "An error occurred. Please try again.": [
+                "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+            ],
+            "Submit this issue if you need help:": [
+                "Senden Sie dieses Problem, falls Sie Hilfe benötigen:"
+            ],
+            "Your email (optional)": [
+                "Ihre E-Mail (optional)"
+            ],
+            "Submit to Us": [
+                "An uns senden"
+            ],
+            "Error Details": [
+                "Fehlerdetails"
+            ],
+            "Failed to load content": [
+                "Inhalt konnte nicht geladen werden"
+            ],
+            "Delete Items": [
+                "Elemente löschen"
+            ],
+            "Post ID:": [
+                "Beitrags-ID:"
+            ],
+            "Loading content...": [
+                "Inhalt wird geladen..."
+            ],
+            "Content Processing Warning": [
+                "Warnung zur Inhaltsverarbeitung"
+            ],
+            "The HTML content of this post produced empty text after processing. This usually means the post contains only non-text elements (scripts, styles, embeds, etc.). The original HTML is shown below for inspection.": [
+                "Der HTML-Inhalt dieses Beitrags erzeugte nach der Verarbeitung leeren Text. Das bedeutet in der Regel, dass der Beitrag nur aus Nicht-Text-Elementen besteht (Skripte, Styles, Einbettungen usw.). Der ursprüngliche HTML-Code wird unten zur Prüfung angezeigt."
+            ],
+            "Original HTML Content": [
+                "Original-HTML-Inhalt"
+            ],
+            "No content available": [
+                "Kein Inhalt verfügbar"
+            ],
+            "Error Processing Content": [
+                "Fehler beim Verarbeiten des Inhalts"
+            ],
+            "Delete from Training Data": [
+                "Aus Trainingsdaten löschen"
+            ],
+            "File Name:": [
+                "Dateiname:"
+            ],
+            "Unknown file": [
+                "Unbekannte Datei"
+            ],
+            "Stored as:": [
+                "Gespeichert als:"
+            ],
+            "HTML": [
+                "HTML"
+            ],
+            "PDF": [
+                "PDF"
+            ],
+            "Original PDF:": [
+                "Original-PDF:"
+            ],
+            "Open PDF": [
+                "PDF öffnen"
+            ],
+            "If this stored URL no longer works, the original PDF is no longer available from this training data record.": [
+                "Wenn diese gespeicherte URL nicht mehr funktioniert, ist das ursprüngliche PDF aus diesem Datensatz mit Trainingsdaten nicht mehr verfügbar."
+            ],
+            "No original URL is stored for this upload. Only the saved file information is available here.": [
+                "Für diesen Upload ist keine ursprüngliche URL gespeichert. Hier sind nur die gespeicherten Dateiinformationen verfügbar."
+            ],
+            "Provider:": [
+                "Anbieter:"
+            ],
+            "AI File ID:": [
+                "KI-Datei-ID:"
+            ],
+            "Last Synced:": [
+                "Zuletzt synchronisiert:"
+            ],
+            "AI-Ready Content": [
+                "AI-bereiter Inhalt"
+            ],
+            "Original Content": [
+                "Originalinhalt"
+            ],
+            "No AI-ready content available": [
+                "Kein AI-bereiter Inhalt verfügbar"
+            ]
+        }
+    }
+}

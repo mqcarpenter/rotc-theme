@@ -1,0 +1,4 @@
+[10-Jun-2026 00:56:04 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/otbdesig/returnofthechampions.com/wp-content/themes/seos-football/index.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/otbdesig/returnofthechampions.com/wp-content/themes/seos-football/index.php on line 7

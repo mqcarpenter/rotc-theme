@@ -1,0 +1,279 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "sv_SE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Title": [
+                "Rubrik"
+            ],
+            "Filter": [
+                "Filtrera"
+            ],
+            "Status": [
+                "Status"
+            ],
+            "All": [
+                "Alla"
+            ],
+            "Page": [
+                "Sida"
+            ],
+            "Close": [
+                "Stäng"
+            ],
+            "Cancel": [
+                "Avbryt"
+            ],
+            "selected": [
+                "Vald"
+            ],
+            "Delete": [
+                "Ta bort"
+            ],
+            "Article": [
+                "Artikel"
+            ],
+            "Updated": [
+                "Uppdaterad"
+            ],
+            "Next": [
+                "Nästa"
+            ],
+            "Previous": [
+                "Föregående"
+            ],
+            "Loading...": [
+                "Laddar in …"
+            ],
+            "Error": [
+                "Fel"
+            ],
+            "Choose Training Data": [
+                "Välj maskininlärningsdata"
+            ],
+            "Send Data to AI": [
+                "Skicka data till AI"
+            ],
+            "Thank you! Your report has been submitted successfully.": [
+                "Tack! Din rapport har skickats in."
+            ],
+            "Never": [
+                "Aldrig"
+            ],
+            "Submitting...": [
+                "Skickar..."
+            ],
+            "Pending": [
+                "Väntande"
+            ],
+            "of": [
+                "av"
+            ],
+            "Canceled": [
+                "Avbrutet"
+            ],
+            "Skipped": [
+                "Hoppade över"
+            ],
+            "Refreshing...": [
+                "Uppdaterar..."
+            ],
+            "Refresh": [
+                "Uppdatera"
+            ],
+            "Searching server for more results...": [
+                "Söker efter fler resultat från servern..."
+            ],
+            "Data refreshed successfully": [
+                "Data uppdaterades framgångsrikt"
+            ],
+            "Delete Selected Items": [
+                "Radera valda objekt"
+            ],
+            "Are you sure you want to delete the selected items?": [
+                "Är du säker på att du vill radera de valda objekten?"
+            ],
+            "Items deleted successfully": [
+                "Valda objekt har raderats framgångsrikt"
+            ],
+            "Sort": [
+                "Sortera"
+            ],
+            "Completed": [
+                "Slutfört"
+            ],
+            "Outdated": [
+                "Föråldrad"
+            ],
+            "Added": [
+                "Tillagt"
+            ],
+            "Added:": [
+                "Lagt till:"
+            ],
+            "Manage Notes and PDFs": [
+                "Hantera anteckningar och PDF-filer"
+            ],
+            "Deleting...": [
+                "Raderar..."
+            ],
+            "Failed to load training data": [
+                "Misslyckades att läsa in maskininlärningsdata"
+            ],
+            "Failed to delete items": [
+                "Misslyckades att radera objekt"
+            ],
+            "Syncing": [
+                "Synkronisering pågår"
+            ],
+            "How to get started": [
+                "Kom igång"
+            ],
+            "Pick the content types to include.": [
+                "Välj vilka innehållstyper som ska ingå."
+            ],
+            "Select items in the table, then sync them.": [
+                "Välj objekten i tabellen och synkronisera dem."
+            ],
+            "Other Actions": [
+                "Andra åtgärder"
+            ],
+            "Rename the collection or delete items.": [
+                "Byt namn på samlingen eller ta bort objekt."
+            ],
+            "Tip: Start with a small set to test the flow.": [
+                "Tips: Börja med ett litet urval för att testa flödet."
+            ],
+            "Sync": [
+                "Synkronisera"
+            ],
+            "Sync Complete": [
+                "Synkronisering slutförd"
+            ],
+            "Search by title, type, URL, or ID...": [
+                "Sök efter titel, typ, URL eller ID..."
+            ],
+            "Preparing sync...": [
+                "Förbereder synkronisering..."
+            ],
+            "Loading training data...": [
+                "Läser in maskininlärningsdata..."
+            ],
+            "Type": [
+                "Typ"
+            ],
+            "No training data found": [
+                "Ingen maskininlärningsdata hittades"
+            ],
+            "Edit note": [
+                "Redigera anteckning"
+            ],
+            "View Error": [
+                "Visa fel"
+            ],
+            "View Info": [
+                "Visa info"
+            ],
+            "View content": [
+                "Visa innehåll"
+            ],
+            "Failed to submit report.": [
+                "Misslyckades med att skicka rapporten."
+            ],
+            "An error occurred. Please try again.": [
+                "Ett fel uppstod. Försök igen."
+            ],
+            "Submit this issue if you need help:": [
+                "Skicka in detta ärende om du behöver hjälp:"
+            ],
+            "Your email (optional)": [
+                "Din e-post (valfri)"
+            ],
+            "Submit to Us": [
+                "Skicka till oss"
+            ],
+            "Error Details": [
+                "Feldetaljer"
+            ],
+            "Failed to load content": [
+                "Misslyckades med att ladda innehåll"
+            ],
+            "Delete Items": [
+                "Radera objekt"
+            ],
+            "Post ID:": [
+                "Inläggs-ID:"
+            ],
+            "Loading content...": [
+                "Laddar innehåll..."
+            ],
+            "Content Processing Warning": [
+                "Varning om innehållsbehandling"
+            ],
+            "The HTML content of this post produced empty text after processing. This usually means the post contains only non-text elements (scripts, styles, embeds, etc.). The original HTML is shown below for inspection.": [
+                "HTML-innehållet i detta inlägg producerade tom text efter bearbetningen. Detta innebär vanligtvis att inlägget endast innehåller icke-textuella element (skript, stilar, inbäddningar, etc.). Den ursprungliga HTML-koden visas nedan för granskning."
+            ],
+            "Original HTML Content": [
+                "Originalt HTML-innehåll"
+            ],
+            "No content available": [
+                "Inget innehåll tillgängligt"
+            ],
+            "Error Processing Content": [
+                "Fel vid behandling av innehåll"
+            ],
+            "Delete from Training Data": [
+                "Ta bort från maskininlärningsdata"
+            ],
+            "File Name:": [
+                "Filnamn:"
+            ],
+            "Unknown file": [
+                "Okänd fil"
+            ],
+            "Stored as:": [
+                "Lagrad som:"
+            ],
+            "HTML": [
+                "HTML"
+            ],
+            "PDF": [
+                "PDF"
+            ],
+            "Original PDF:": [
+                "Original PDF:"
+            ],
+            "Open PDF": [
+                "Öppna PDF"
+            ],
+            "If this stored URL no longer works, the original PDF is no longer available from this training data record.": [
+                "Om den sparade URL:en inte längre fungerar är original-PDF:en inte längre tillgänglig från denna maskininlärningsdata-post."
+            ],
+            "No original URL is stored for this upload. Only the saved file information is available here.": [
+                "Ingen ursprunglig URL har sparats för denna uppladdning. Endast den sparade filinformationen är tillgänglig här."
+            ],
+            "Provider:": [
+                "Leverantör:"
+            ],
+            "AI File ID:": [
+                "AI-fil-ID:"
+            ],
+            "Last Synced:": [
+                "Senast synkroniserad:"
+            ],
+            "AI-Ready Content": [
+                "AI-redo innehåll"
+            ],
+            "Original Content": [
+                "Originalinnehåll"
+            ],
+            "No AI-ready content available": [
+                "Inget AI-redo innehåll tillgängligt"
+            ]
+        }
+    }
+}

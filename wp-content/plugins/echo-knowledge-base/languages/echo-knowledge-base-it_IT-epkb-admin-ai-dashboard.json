@@ -1,0 +1,54 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "it_IT",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Settings": [
+                "Impostazioni"
+            ],
+            "Learn More": [
+                "Scopri di più"
+            ],
+            "AI Features": [
+                "Funzionalità IA"
+            ],
+            "See Demo Quiz": [
+                "Vedi il quiz demo"
+            ],
+            "General Settings": [
+                "Impostazioni Generali"
+            ],
+            "This Knowledge Base AI Is Not Enabled": [
+                "Questa IA della base di conoscenza non è abilitata"
+            ],
+            "AI features are optional and turned off by default. AI will only work after you manually enable it and add your own API key in ": [
+                "Le funzionalità IA sono opzionali e disattivate per impostazione predefinita. L'IA funzionerà solo dopo averla attivata manualmente e aver inserito la tua chiave API in"
+            ],
+            "Latest AI Updates": [
+                "Ultimi aggiornamenti IA"
+            ],
+            "Learn more": [
+                "Scopri di più"
+            ],
+            "Failed to enable feature.": [
+                "Impossibile abilitare la funzionalità."
+            ],
+            "FREE": [
+                "GRATUITO"
+            ],
+            "Enabling...": [
+                "Abilitazione in corso..."
+            ],
+            "Free Features": [
+                "Funzionalità gratuite"
+            ],
+            "AI Feature Plugin": [
+                "Plugin funzionalità IA"
+            ]
+        }
+    }
+}

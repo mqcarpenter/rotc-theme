@@ -1,0 +1,84 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "da_DK",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Close": [
+                "Luk"
+            ],
+            "Cancel": [
+                "Annuller"
+            ],
+            "Next": [
+                "Næste"
+            ],
+            "AI Features": [
+                "AI-funktioner"
+            ],
+            "OFF": [
+                "FRA"
+            ],
+            "Use code:": [
+                "Brug kode:"
+            ],
+            "Copy": [
+                "Kopier"
+            ],
+            "Documentation": [
+                "Dokumentation"
+            ],
+            "Copied!": [
+                "Kopieret!"
+            ],
+            "Got it!": [
+                "Forstået!"
+            ],
+            "Show Me": [
+                "Vis mig"
+            ],
+            "Loading...": [
+                "Indlæser..."
+            ],
+            "Go to General Settings": [
+                "Gå til Generelle indstillinger"
+            ],
+            "Go to Settings": [
+                "Gå til Indstillinger"
+            ],
+            "Your session has expired. Please refresh the page to log in again.": [
+                "Din session er udløbet. Opdater siden venligst for at logge ind igen."
+            ],
+            "Too many requests. Please wait a moment and try again.": [
+                "For mange forespørgsler. Vent venligst et øjeblik og prøv igen."
+            ],
+            "An unexpected error occurred. Please try again.": [
+                "Der opstod en uventet fejl. Prøv venligst igen."
+            ],
+            "Confirm Action": [
+                "Bekræft handling"
+            ],
+            "Are you sure you want to proceed?": [
+                "Er du sikker på, at du vil fortsætte?"
+            ],
+            "Confirm": [
+                "Bekræft"
+            ],
+            "Setup Steps": [
+                "Opsætningstrin"
+            ],
+            "Session Expired": [
+                "Sessionen er udløbet"
+            ],
+            "Refresh Page": [
+                "Opdater siden"
+            ],
+            "No results found": [
+                "Ingen resultater fundet"
+            ]
+        }
+    }
+}

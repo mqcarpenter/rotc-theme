@@ -1,0 +1,22 @@
+# This repo mirrors the site's document root, but only tracks
+# wp-content/ (custom themes, plugins, uploads). WordPress core
+# (wp-admin, wp-includes, root wp-*.php files) is vendor code --
+# trivially reinstalled from wordpress.org, not something anyone edits,
+# not worth the bloat of tracking. /manage/ is its own fully separate
+# git repo (mqcarpenter/rotc26) with its own deploy workflow -- ignored
+# here (implicitly, by not being wp-content) so the two never collide.
+/*
+!/.gitignore
+!/wp-content
+
+# The backup archives themselves must never be committed -- these are
+# multi-hundred-MB tar/zip files, not source content.
+wp-content/backuply/
+wp-content/backups-dup-lite/
+
+# WordPress core, plugin, and cache-generated data, none of it source.
+wp-content/upgrade/
+wp-content/upgrade-temp-backup/
+wp-content/litespeed/
+
+.DS_Store

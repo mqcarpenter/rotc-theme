@@ -1,0 +1,141 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "sv_SE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Updated": [
+                "Uppdaterad"
+            ],
+            "Error": [
+                "Fel"
+            ],
+            "No synced items found to verify": [
+                "Inga synkroniserade objekt hittades för verifiering"
+            ],
+            "Pending": [
+                "Väntande"
+            ],
+            "of": [
+                "av"
+            ],
+            "Selected": [
+                "Markerad"
+            ],
+            "Processing": [
+                "Bearbetar"
+            ],
+            "errors": [
+                "fel"
+            ],
+            "with": [
+                "med"
+            ],
+            "Sync canceled": [
+                "Synkronisering avbruten"
+            ],
+            "No posts found to sync": [
+                "Inga inlägg hittades för att synkronisera"
+            ],
+            "Failed to cancel sync": [
+                "Misslyckades med att avbryta synkroniseringen"
+            ],
+            "Failed to start verification": [
+                "Misslyckades med att starta verifieringen"
+            ],
+            "A sync job is already running.": [
+                "En synkronisering pågår redan."
+            ],
+            "Failed to start sync": [
+                "Misslyckades med att starta synkroniseringen"
+            ],
+            "API key is required to sync content. Please configure it in General Settings.": [
+                "API-nyckel krävs för att synkronisera innehåll. Konfigurera den i Allmänna inställningar."
+            ],
+            "Outdated": [
+                "Föråldrad"
+            ],
+            "Added": [
+                "Tillagt"
+            ],
+            "Records": [
+                "Poster"
+            ],
+            "selected records": [
+                "valda poster"
+            ],
+            "Select All Filtered Records": [
+                "Välj alla filtrerade poster"
+            ],
+            "Select All Records": [
+                "Välj alla poster"
+            ],
+            "Sync in Progress": [
+                "Synkronisering pågår"
+            ],
+            "Cancel Sync": [
+                "Avbryt synkronisering"
+            ],
+            "API key required": [
+                "API-nyckel krävs"
+            ],
+            "Select at least one item to sync": [
+                "Välj minst ett objekt att synkronisera"
+            ],
+            "Send Data to AI for Training": [
+                "Skicka data till AI för träning"
+            ],
+            "Sync started successfully! ": [
+                "Synkronisering startade framgångsrikt!"
+            ],
+            "Starting sync...": [
+                "Startar synkronisering..."
+            ],
+            "Retrying failed posts:": [
+                "Återförsöker misslyckade inlägg:"
+            ],
+            "posts": [
+                "inlägg"
+            ],
+            "Completed! Processed": [
+                "Slutfört! Bearbetade"
+            ],
+            "Sync stopped after 5 consecutive errors. Processed": [
+                "Synkronisering stoppades efter 5 upprepade fel. Bearbetade"
+            ],
+            "posts with": [
+                "inlägg med"
+            ],
+            "total errors": [
+                "totala fel"
+            ],
+            "Sync scheduled, waiting to start...": [
+                "Synkronisering schemalagd, väntar på att starta..."
+            ],
+            "Upload completed, but the number of items doesn't match:": [
+                "Uppladdningen slutfördes, men antalet objekt matchar inte:"
+            ],
+            "items tracked locally vs": [
+                "objekt som spåras lokalt vs"
+            ],
+            "items in the AI provider.": [
+                "föremål i AI-leverantören."
+            ],
+            "Checking for specific mismatches...": [
+                "Kontrollerar specifika avvikelser..."
+            ],
+            "The following items were not found in the AI provider:": [
+                "Följande objekt hittades inte i AI-leverantören:"
+            ],
+            "items in the AI provider are not tracked locally.": [
+                "Objekt i AI-leverantören spåras inte lokalt."
+            ],
+            "Verify & Fix": [
+                "Verifiera och åtgärda"
+            ]
+        }
+    }
+}

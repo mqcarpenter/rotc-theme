@@ -1,0 +1,87 @@
+{
+    "domain": "echo-knowledge-base",
+    "locale_data": {
+        "echo-knowledge-base": {
+            "": {
+                "domain": "echo-knowledge-base",
+                "lang": "it_IT",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Close": [
+                "Chiudi"
+            ],
+            "Cancel": [
+                "Annulla"
+            ],
+            "Next": [
+                "Avanti"
+            ],
+            "AI Features": [
+                "Funzionalità IA"
+            ],
+            "OFF": [
+                "DISATTIVATO"
+            ],
+            "Use code:": [
+                "Usa codice:"
+            ],
+            "Copy": [
+                "Copia"
+            ],
+            "Documentation": [
+                "Documentazione"
+            ],
+            "Copied!": [
+                "Copiato!"
+            ],
+            "Got it!": [
+                "Capito!"
+            ],
+            "Show Me": [
+                "Mostra"
+            ],
+            "Loading...": [
+                "Caricamento..."
+            ],
+            "Go to General Settings": [
+                "Vai alle Impostazioni Generali"
+            ],
+            "Go to Settings": [
+                "Vai alle Impostazioni"
+            ],
+            "Your session has expired. Please refresh the page to log in again.": [
+                "La tua sessione è scaduta. Per favore, aggiorna la pagina per accedere nuovamente."
+            ],
+            "Too many requests. Please wait a moment and try again.": [
+                "Troppi tentativi. Attendere un momento e riprovare."
+            ],
+            "An unexpected error occurred. Please try again.": [
+                "Si è verificato un errore imprevisto. Riprova."
+            ],
+            "Confirm Action": [
+                "Conferma azione"
+            ],
+            "Are you sure you want to proceed?": [
+                "Sei sicuro di voler procedere?"
+            ],
+            "Confirm": [
+                "Conferma"
+            ],
+            "Setup Steps": [
+                "Passaggi di configurazione"
+            ],
+            "To use AI features, please configure your API key and accept the data privacy agreement in General Settings.": [
+                "Per utilizzare le funzionalità IA, configura la tua chiave API e accetta l'informativa sulla privacy dei dati nelle Impostazioni generali."
+            ],
+            "Session Expired": [
+                "Sessione scaduta"
+            ],
+            "Refresh Page": [
+                "Aggiorna pagina"
+            ],
+            "No results found": [
+                "Nessun risultato trovato"
+            ]
+        }
+    }
+}
