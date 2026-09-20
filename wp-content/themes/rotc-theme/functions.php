@@ -18,9 +18,12 @@ function rotc_theme_setup(): void {
     add_theme_support('automatic-feed-links');
     add_theme_support('align-wide');
 
+    // No 'primary' menu location anymore -- header.php includes
+    // /manage/'s own real nav directly (see that file's doc comment),
+    // not a WordPress-managed menu. 'footer' stays; footer.php still
+    // offers it as an optional extra column.
     register_nav_menus([
-        'primary' => __('Primary Menu', 'rotc-theme'),
-        'footer'  => __('Footer Menu', 'rotc-theme'),
+        'footer' => __('Footer Menu', 'rotc-theme'),
     ]);
 }
 add_action('after_setup_theme', 'rotc_theme_setup');
@@ -28,7 +31,19 @@ add_action('after_setup_theme', 'rotc_theme_setup');
 function rotc_theme_assets(): void {
     wp_enqueue_style('rotc-theme-style', get_stylesheet_uri(), [], ROTC_THEME_VERSION);
     wp_enqueue_style('rotc-theme-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@600;700&display=swap', [], null);
-    wp_enqueue_script('rotc-theme-nav', get_template_directory_uri() . '/assets/rotc-theme.js', [], ROTC_THEME_VERSION, true);
+    // mfl26.css is what actually styles the shared nav header.php now
+    // includes from /manage/ -- this theme's own style.css deliberately
+    // no longer defines .rotc-nav/.rotc-brand/etc. at all, to avoid two
+    // rule sets fighting over the same class names. Cache-busted the
+    // same way manage's own header.php does (filemtime, not a static
+    // version string), since this file changes independently of theme
+    // releases.
+    $manageRoot = dirname(ABSPATH) . '/manage';
+    $mfl26Path = $manageRoot . '/assets/mfl26.css';
+    if (file_exists($mfl26Path)) {
+        $mfl26Ver = @filemtime($mfl26Path) ?: ROTC_THEME_VERSION;
+        wp_enqueue_style('rotc-manage-nav', trailingslashit(home_url()) . 'manage/assets/mfl26.css', [], $mfl26Ver);
+    }
 }
 
 /**
@@ -77,14 +92,6 @@ add_action('wp_enqueue_scripts', 'rotc_theme_assets');
  * that stale assignment to render into, regardless of what's still
  * sitting in the database.
  */
-
-/**
- * Fallback markup when no 'primary' menu has been assigned yet in
- * Appearance > Menus, so the site never ships a blank nav bar.
- */
-function rotc_theme_fallback_menu(): void {
-    echo '<ul class="rotc-nav-menu"><li><a href="' . esc_url(home_url('/')) . '">' . esc_html__('Home', 'rotc-theme') . '</a></li></ul>';
-}
 
 require get_template_directory() . '/inc/league-data.php';
 require get_template_directory() . '/inc/epkb-compat.php';

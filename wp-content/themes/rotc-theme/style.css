@@ -66,42 +66,12 @@ h1,h2,h3,h4{ font-family:"Roboto Condensed","Arial Narrow",sans-serif; line-heig
 }
 .rotc-card:hover{ }
 
-/* ---- Top nav (matches /manage/'s dark bar) ------------------- */
-.rotc-nav{ background:var(--ink); color:var(--on-ink); }
-.rotc-nav-inner{
-  max-width:1180px; margin:0 auto; padding:0 16px; display:flex;
-  align-items:center; gap:24px; min-height:60px; flex-wrap:wrap;
-}
-.rotc-brand{ display:flex; align-items:center; flex:0 0 auto; }
-.rotc-brand .rotc-logo{ height:36px !important; width:auto !important; max-height:36px !important; max-width:140px !important; object-fit:contain; display:block; }
-.rotc-nav-menu{ list-style:none; display:flex; gap:6px; margin:0; padding:0; flex-wrap:wrap; }
-.rotc-nav-menu li{ position:relative; }
-.rotc-nav-menu a{
-  display:block; padding:20px 12px; color:var(--on-ink); font-family:"Roboto Condensed",sans-serif;
-  text-transform:uppercase; font-size:13px; letter-spacing:.05em; font-weight:600;
-}
-.rotc-nav-menu a:hover{ color:var(--accent); }
-.rotc-nav-menu .current-menu-item > a{ color:var(--accent); }
-.rotc-nav-menu .sub-menu{
-  list-style:none; margin:0; padding:8px 0; position:absolute; top:100%; left:0;
-  background:var(--ink); min-width:200px; display:none; z-index:20;
-  box-shadow:0 12px 24px rgba(0,0,0,.25);
-}
-.rotc-nav-menu li:hover > .sub-menu{ display:block; }
-.rotc-nav-menu .sub-menu a{ padding:9px 16px; text-transform:none; letter-spacing:0; font-size:13px; }
-.rotc-nav-toggle{ display:none; }
-
-@media (max-width:820px){
-  .rotc-nav-menu{ display:none; width:100%; flex-direction:column; gap:0; }
-  .rotc-nav-menu.is-open{ display:flex; }
-  .rotc-nav-menu li{ width:100%; border-top:1px solid rgba(255,255,255,.08); }
-  .rotc-nav-menu a{ padding:14px 4px; }
-  .rotc-nav-menu .sub-menu{ position:static; box-shadow:none; padding-left:12px; }
-  .rotc-nav-toggle{
-    display:inline-flex; margin-left:auto; background:none; border:1px solid rgba(255,255,255,.3);
-    border-radius:6px; color:var(--on-ink); padding:8px 10px; font-size:13px; cursor:pointer;
-  }
-}
+/* ---- Top nav ---------------------------------------------------
+   No .rotc-nav/.rotc-brand/etc. rules here anymore -- header.php
+   includes /manage/'s REAL nav (templates/nav.php) directly from the
+   filesystem now, styled by mfl26.css (enqueued in functions.php),
+   not a lookalike copy in this file. Keeping both would mean two
+   different rule sets fighting over the same class names. */
 
 /* ---- Homepage: league snapshot -------------------------------- */
 .rotc-league-wrap{ display:grid; grid-template-columns:2fr 1fr; gap:24px; align-items:start; }
