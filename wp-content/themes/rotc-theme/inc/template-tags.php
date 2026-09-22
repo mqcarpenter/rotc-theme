@@ -11,6 +11,13 @@ function rotc_theme_posted_on(): string {
     return sprintf('%s &middot; %s', get_the_date(), get_the_author());
 }
 
+/** Word count / 200wpm, rounded up, minimum 1 -- called inside the loop (uses get_the_content()). */
+function rotc_theme_reading_time(): string {
+    $words = str_word_count(wp_strip_all_tags(get_the_content()));
+    $minutes = max(1, (int) ceil($words / 200));
+    return sprintf(_n('%d min read', '%d min read', $minutes, 'rotc-theme'), $minutes);
+}
+
 /**
  * Trims an excerpt to $chars, breaking on a word boundary -- used by
  * the card grid instead of the_excerpt() so a post with no manual

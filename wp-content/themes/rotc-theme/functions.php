@@ -97,3 +97,24 @@ require get_template_directory() . '/inc/league-data.php';
 require get_template_directory() . '/inc/epkb-compat.php';
 require get_template_directory() . '/inc/wpforo-compat.php';
 require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * [rotc_stat number="20.38" label="points Cam Ward scored from the bench"]
+ * A big-numeral callout box for the one stat a recap wants to land --
+ * this content is stats-heavy (weekly point totals, margins) that
+ * currently has zero visual weight, sitting as plain paragraph text
+ * identical to everything else on the page. Drop this shortcode
+ * anywhere in the post body; no block/plugin dependency, so it works
+ * the same whether a post is hand-written in the block editor or
+ * inserted via a script (wp_insert_post / REST) the way the recap
+ * articles are.
+ */
+function rotc_theme_stat_shortcode($atts): string {
+    $a = shortcode_atts(['number' => '', 'label' => ''], $atts, 'rotc_stat');
+    if ($a['number'] === '') return '';
+    return '<div class="rotc-stat-callout">'
+        . '<div class="rotc-stat-callout-num">' . esc_html($a['number']) . '</div>'
+        . ($a['label'] !== '' ? '<div class="rotc-stat-callout-label">' . esc_html($a['label']) . '</div>' : '')
+        . '</div>';
+}
+add_shortcode('rotc_stat', 'rotc_theme_stat_shortcode');
