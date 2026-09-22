@@ -150,7 +150,7 @@ h1,h2,h3,h4{ font-family:"Roboto Condensed","Arial Narrow",sans-serif; line-heig
 
 /* ---- Single post / page ----------------------------------------- */
 .rotc-article-header{ margin-bottom:20px; }
-.rotc-article-title{ font-size:32px; text-transform:none; margin:6px 0 10px; }
+.rotc-article-title{ font-size:40px; font-weight:700; letter-spacing:-.01em; text-transform:none; margin:6px 0 10px; }
 .rotc-article-meta{ display:flex; align-items:center; gap:8px; font-family:"Roboto Condensed",sans-serif; text-transform:uppercase; letter-spacing:.04em; font-size:12px; color:var(--muted); }
 .rotc-article-avatar{ border-radius:50%; display:block; }
 .rotc-article-body{ font-size:17px; line-height:1.7; }
@@ -192,6 +192,33 @@ h1,h2,h3,h4{ font-family:"Roboto Condensed","Arial Narrow",sans-serif; line-heig
 .rotc-stat-callout{ background:var(--sand); border-radius:var(--radius); padding:20px 24px; margin:1.4em 0; text-align:center; }
 .rotc-stat-callout-num{ font-family:"Roboto Condensed",sans-serif; font-weight:700; font-size:44px; line-height:1; color:var(--accent); }
 .rotc-stat-callout-label{ margin-top:6px; font-size:14px; color:var(--muted); }
+
+/* [rotc_matchup] shortcode -- a real embedded score bug for the game a
+   recap article is actually about, sourced live from manage/api/wp-
+   feed.php. Dark scoreboard treatment (not another white card) so it
+   reads as a distinct "live data" module inside the article body. */
+.rotc-matchup-embed{
+  background:var(--ink); color:var(--on-ink); border-radius:var(--radius);
+  padding:18px 20px; margin:1.4em 0;
+}
+.rotc-matchup-embed-week{
+  font-family:"Roboto Condensed",sans-serif; text-transform:uppercase; letter-spacing:.06em;
+  font-size:11px; color:rgba(253,251,247,.65); text-align:center; margin-bottom:12px;
+}
+.rotc-matchup-embed-teams{ display:flex; align-items:center; justify-content:center; gap:20px; }
+.rotc-matchup-embed-side{ flex:1 1 0; min-width:0; text-align:center; opacity:.75; }
+.rotc-matchup-embed-side.win{ opacity:1; }
+.rotc-matchup-embed-helmet{ width:56px; height:56px; object-fit:contain; margin:0 auto 8px; display:block; }
+.rotc-matchup-embed-helmet.flip{ transform:scaleX(-1); }
+.rotc-matchup-embed-name{ font-size:13px; font-weight:600; margin-bottom:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.rotc-matchup-embed-score{ font-family:"Roboto Condensed",sans-serif; font-weight:700; font-size:28px; line-height:1; }
+.rotc-matchup-embed-side.win .rotc-matchup-embed-score{ color:var(--accent); }
+.rotc-matchup-embed-final{ flex:0 0 auto; font-family:"Roboto Condensed",sans-serif; text-transform:uppercase; letter-spacing:.05em; font-size:11px; color:rgba(253,251,247,.55); }
+@media (max-width:480px){
+  .rotc-matchup-embed-name{ font-size:12px; }
+  .rotc-matchup-embed-score{ font-size:22px; }
+  .rotc-matchup-embed-helmet{ width:40px; height:40px; }
+}
 
 /* Related-posts grid below the article (single.php) -- same card
    partial + grid class the homepage/archive already use. */

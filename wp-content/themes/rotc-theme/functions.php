@@ -118,3 +118,49 @@ function rotc_theme_stat_shortcode($atts): string {
         . '</div>';
 }
 add_shortcode('rotc_stat', 'rotc_theme_stat_shortcode');
+
+/**
+ * [rotc_matchup week="2" team="0002"]
+ * The one thing a generic blog can't do: a real embedded score bug for
+ * the ACTUAL matchup a recap article is about, sourced live from
+ * manage/api/wp-feed.php (inc/league-data.php) -- same franchise ids,
+ * helmet art, and scores the /manage/ app itself uses, not something
+ * hand-typed into the post that can drift from the real result.
+ * `team` is either side's franchise id (e.g. "0002") -- a franchise
+ * plays exactly one game a week, so one id is enough to find the game;
+ * the shortcode renders both sides regardless of which one was passed.
+ * Silently renders nothing if the week/team don't resolve to a real
+ * game (bad id, bye week, feed unreachable) rather than showing a
+ * broken box in the middle of an article.
+ */
+function rotc_theme_matchup_shortcode($atts): string {
+    $a = shortcode_atts(['week' => '', 'team' => ''], $atts, 'rotc_matchup');
+    $week = (int) $a['week'];
+    $team = trim((string) $a['team']);
+    if ($week < 1 || $team === '') return '';
+
+    $game = rotc_theme_find_game(rotc_theme_get_week_feed($week), $team);
+    if (!$game) return '';
+
+    ob_start();
+    ?>
+    <div class="rotc-matchup-embed">
+      <div class="rotc-matchup-embed-week">Week <?php echo (int) $week; ?><?php echo $game['isGameOfWeek'] ? ' &middot; Game of the Week' : ''; ?></div>
+      <div class="rotc-matchup-embed-teams">
+        <div class="rotc-matchup-embed-side win">
+          <?php if ($game['helmet']): ?><img src="<?php echo esc_url($game['helmet']); ?>" alt="" class="rotc-matchup-embed-helmet<?php echo $game['helmetFlip'] ? ' flip' : ''; ?>"><?php endif; ?>
+          <div class="rotc-matchup-embed-name"><?php echo esc_html($game['winner']); ?></div>
+          <div class="rotc-matchup-embed-score"><?php echo esc_html(number_format((float) $game['winnerScore'], 2)); ?></div>
+        </div>
+        <div class="rotc-matchup-embed-final">FINAL</div>
+        <div class="rotc-matchup-embed-side">
+          <?php if ($game['loserHelmet']): ?><img src="<?php echo esc_url($game['loserHelmet']); ?>" alt="" class="rotc-matchup-embed-helmet<?php echo $game['loserHelmetFlip'] ? ' flip' : ''; ?>"><?php endif; ?>
+          <div class="rotc-matchup-embed-name"><?php echo esc_html($game['loser']); ?></div>
+          <div class="rotc-matchup-embed-score"><?php echo esc_html(number_format((float) $game['loserScore'], 2)); ?></div>
+        </div>
+      </div>
+    </div>
+    <?php
+    return trim((string) ob_get_clean());
+}
+add_shortcode('rotc_matchup', 'rotc_theme_matchup_shortcode');

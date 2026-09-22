@@ -49,3 +49,51 @@ function rotc_theme_get_league_feed(): ?array {
     set_transient(ROTC_LEAGUE_FEED_TRANSIENT . '_stale', $data, DAY_IN_SECONDS);
     return $data;
 }
+
+/**
+ * Same feed, for one SPECIFIC past (or current) week -- used by the
+ * [rotc_matchup] shortcode embedded in a recap article's body, which
+ * needs that particular week's game even after the "current" week (and
+ * therefore rotc_theme_get_league_feed()'s result) has moved on.
+ * Cached an hour per week requested -- a completed week's result never
+ * changes, so this is generous rather than tight, and every post
+ * embedding the same week's game shares one cached fetch.
+ *
+ * @return array|null Same shape as rotc_theme_get_league_feed(), or
+ *   null if unreachable -- callers must degrade gracefully.
+ */
+function rotc_theme_get_week_feed(int $week): ?array {
+    if ($week < 1) return null;
+    $transientKey = 'rotc_week_feed_' . $week;
+    $cached = get_transient($transientKey);
+    if (is_array($cached)) return $cached;
+
+    $url = trailingslashit(home_url()) . 'manage/api/wp-feed.php?week=' . $week;
+    $response = wp_remote_get($url, ['timeout' => 5]);
+    if (is_wp_error($response) || wp_remote_retrieve_response_code($response) !== 200) {
+        $stale = get_transient($transientKey . '_stale');
+        return is_array($stale) ? $stale : null;
+    }
+
+    $data = json_decode(wp_remote_retrieve_body($response), true);
+    if (!is_array($data)) return null;
+
+    set_transient($transientKey, $data, HOUR_IN_SECONDS);
+    set_transient($transientKey . '_stale', $data, WEEK_IN_SECONDS);
+    return $data;
+}
+
+/**
+ * Finds one franchise's game within an already-fetched week feed (see
+ * rotc_theme_get_week_feed()), by either side's franchise id.
+ * @return array|null One entry from the feed's "games" list, or null
+ *   if that franchise has no game in this feed (bye week, bad id, or
+ *   the feed itself came back empty).
+ */
+function rotc_theme_find_game(?array $weekFeed, string $teamId): ?array {
+    if (!$weekFeed || empty($weekFeed['games'])) return null;
+    foreach ($weekFeed['games'] as $game) {
+        if ($game['winnerId'] === $teamId || $game['loserId'] === $teamId) return $game;
+    }
+    return null;
+}
